@@ -44,4 +44,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account_log_in">ALREADY HAVE AN ACCOUNT? LOG IN</string>
+    <string name="we_are_logo">We are what we do</string>
+    <string name="meditation_text_logo">Thousand of people are usign silent moon for smalls meditation</string>
+    <string name="logo_for_greetings_screen">logo_for_greetings_screen</string>
+    <string name="silent">Silent</string>
+    <string name="moon">Moon</string>
 </resources>
