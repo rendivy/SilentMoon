@@ -1,22 +1,16 @@
 package com.example.silentmoon
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.silentmoon.databinding.FragmentFirstBinding
+import androidx.fragment.app.Fragment
+import com.example.silentmoon.databinding.OnBoardingFragmentBinding
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
-class FirstFragment : Fragment() {
+class OnBoardingFragment : Fragment(R.layout.on_boarding_fragment) {
 
-    private var _binding: FragmentFirstBinding? = null
+    private var _binding: OnBoardingFragmentBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -24,7 +18,7 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = OnBoardingFragmentBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -33,7 +27,10 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.someId.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.main_activity_coordinator_layout, FirstRegistrationFragment())
+                .addToBackStack(null)
+                .commit()
         }
     }
 
