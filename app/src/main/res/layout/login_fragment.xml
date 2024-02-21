@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/registration_background">
-
-
-    <TextView
-        android:id="@+id/welcomeBackTextView"
-        style="@style/PrimaryTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/padding24"
-        android:text="@string/welcome_back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ScrollView
@@ -27,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeBackTextView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -37,7 +27,7 @@
                 android:id="@+id/facebookButton"
                 style="@style/PrimaryButtonStyle"
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/padding24"
+                android:layout_marginTop="24dp"
                 android:backgroundTint="@color/violets_are_blue"
                 android:drawableLeft="@drawable/facebook_logo"
                 android:insetLeft="@dimen/padding0"
@@ -47,7 +37,7 @@
                 android:text="@string/facebook_button_label"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/welcomeBackTextView" />
 
             <Button
                 android:id="@+id/googleButton"
@@ -65,10 +55,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/facebookButton"
+                app:strokeColor="@color/light_gray_stroke"
                 app:strokeWidth="1dp" />
 
             <TextView
                 android:id="@+id/loginWithEmailLabel"
+                style="@style/PrimaryTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/padding24"
@@ -94,6 +86,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/loginWithEmailLabel">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PrimaryTextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/email_label" />
@@ -103,6 +96,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordTextField"
+                style="@style/PrimaryTextFieldStyle"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/accentButtonHeight"
                 android:layout_marginStart="@dimen/padding24"
@@ -117,6 +111,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/emailTextField">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PrimaryTextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/password_label"
@@ -138,15 +133,13 @@
 
             <TextView
                 android:id="@+id/haveAnAccountLabel"
+                style="@style/PrimaryTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/paddingLarge"
-                android:fontFamily="@font/roboto_regular"
                 android:paddingStart="@dimen/paddingTiny"
                 android:paddingEnd="@dimen/paddingTiny"
                 android:text="@string/already_have_an_account"
-                android:textColor="@color/gray"
-                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -156,6 +149,7 @@
 
             <TextView
                 android:id="@+id/forgotPasswordLabel"
+                style="@style/RobotoNormal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/padding24"
@@ -163,8 +157,6 @@
                 android:paddingStart="@dimen/paddingTiny"
                 android:paddingEnd="@dimen/paddingTiny"
                 android:text="@string/forgot_password"
-                android:textColor="@color/gray"
-                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/singUpButton">
@@ -180,6 +172,16 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/forgotPasswordLabel" />
+
+            <TextView
+                android:id="@+id/welcomeBackTextView"
+                style="@style/PrimaryTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

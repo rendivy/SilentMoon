@@ -136,16 +136,6 @@
             android:textSize="14sp">
         </TextView>
 
-        <TextView
-            android:id="@+id/log_in"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/log_in"
-            android:textColor="@color/gray"
-            android:textSize="14sp">
-        </TextView>
-
     </LinearLayout>
 
 
