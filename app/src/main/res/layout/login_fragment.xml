@@ -37,7 +37,7 @@
                 android:text="@string/facebook_button_label"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcomeBackTextView" />
+                app:layout_constraintTop_toBottomOf="@+id/createYouAccountTextView" />
 
             <Button
                 android:id="@+id/googleButton"
@@ -179,7 +179,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/forgotPasswordLabel" />
 
             <TextView
-                android:id="@+id/welcomeBackTextView"
+                android:id="@+id/createYouAccountTextView"
                 style="@style/PrimaryTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
