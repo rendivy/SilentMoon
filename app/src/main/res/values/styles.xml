@@ -8,7 +8,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">32dp</item>
         <item name="android:insetLeft">0dp</item>
-        <item name="android:height">63dp</item>
+        <item name="android:height">@dimen/accentButtonHeight</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetRight">0dp</item>
         <item name="android:insetBottom">0dp</item>
@@ -17,6 +17,11 @@
         <item name="android:textSize">14sp</item>
         <item name="android:backgroundTint">@color/violets_are_blue</item>
         <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+    </style>
+
+    <style name="PrimaryTextFieldStyle">
+        <item name="android:background">@drawable/rounded_text_fields</item>
+        <item name="android:backgroundTint">#FFF2F3F7</item>
     </style>
 
 

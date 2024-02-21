@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Silent Moon</string>
     <string name="action_settings">Settings</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -23,5 +24,8 @@
     <string name="continue_with_google">CONTINUE WITH GOOGLE</string>
     <string name="email_address">Email address</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="login_email_label">OR LOG IN WITH EMAIL</string>
 
 </resources>
