@@ -23,7 +23,7 @@ class OnBoardingFragment : Fragment(R.layout.on_boarding_fragment) {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = OnBoardingFragmentBinding.inflate(inflater, container, false)
         return binding.root
