@@ -25,8 +25,8 @@ class LoginFragment : Fragment(R.layout.login_fragment) {
     ): View {
 
         binding = LoginFragmentBinding.inflate(inflater, container, false)
-        binding.scrollView2.setOnClickListener {
-            binding.scrollView2.clearFocus()
+        binding.parentScrollView.setOnClickListener {
+            binding.parentScrollView.clearFocus()
         }
         binding.forgotPasswordLabel.setOnClickListener {
             Toast.makeText(context, R.string.forgot_password_toast, Toast.LENGTH_SHORT).show()
@@ -40,7 +40,6 @@ class LoginFragment : Fragment(R.layout.login_fragment) {
             override fun onClick(widget: View) {
                 Toast.makeText(context, R.string.forgot_password_toast, Toast.LENGTH_SHORT).show()
             }
-
             override fun updateDrawState(ds: TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = false

@@ -9,7 +9,7 @@
 
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/parentScrollView"
         android:layout_width="@dimen/padding0"
         android:layout_height="@dimen/padding0"
         android:layout_marginTop="@dimen/padding24"
@@ -83,13 +83,16 @@
                 app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/loginWithEmailLabel">
+                app:layout_constraintTop_toBottomOf="@+id/loginWithEmailLabel"
+                app:startIconContentDescription="123">
 
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/PrimaryTextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="@string/email_label" />
+                    android:drawableRight="@drawable/valdiation_correct_icon"
+                    android:hint="@string/email_label"
+                    android:singleLine="true" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -105,6 +108,8 @@
                 android:background="@drawable/rounded_text_fields"
                 app:boxStrokeColor="@color/transparent"
                 app:boxStrokeWidth="@dimen/padding0"
+                app:endIconDrawable="@drawable/close_eye_icon"
+                app:endIconMode="password_toggle"
                 app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
