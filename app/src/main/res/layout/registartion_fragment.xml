@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_background">
+
+
+    <ScrollView
+        android:id="@+id/parentScrollView"
+        android:layout_width="@dimen/padding0"
+        android:layout_height="@dimen/padding0"
+        android:layout_marginTop="@dimen/padding24"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/facebookButton"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/violets_are_blue"
+                android:drawableLeft="@drawable/facebook_logo"
+                android:insetLeft="@dimen/padding0"
+                android:insetTop="@dimen/padding0"
+                android:insetRight="@dimen/padding0"
+                android:insetBottom="@dimen/padding0"
+                android:text="@string/facebook_button_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/createYouAccountTextView" />
+
+            <Button
+                android:id="@+id/googleButton"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/padding24"
+                android:backgroundTint="@color/transparent"
+                android:drawableLeft="@drawable/google_logo"
+                android:insetLeft="@dimen/padding0"
+                android:insetTop="@dimen/padding0"
+                android:insetRight="@dimen/padding0"
+                android:insetBottom="@dimen/padding0"
+                android:text="@string/continue_with_google"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/facebookButton"
+                app:strokeColor="@color/light_gray_stroke"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/loginWithEmailLabel"
+                style="@style/PrimaryTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding24"
+                android:text="@string/or_sign_up_with_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/googleButton" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTextField"
+                style="@style/PrimaryTextFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accentButtonHeight"
+                android:layout_marginStart="@dimen/padding24"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/padding24"
+                app:boxStrokeColor="@color/transparent"
+                app:boxStrokeWidth="@dimen/padding0"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginWithEmailLabel"
+                app:startIconContentDescription="123">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PrimaryTextInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/valdiation_correct_icon"
+                    android:hint="@string/your_name"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextField"
+                style="@style/PrimaryTextFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accentButtonHeight"
+                android:layout_marginStart="@dimen/padding24"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/padding24"
+                app:boxStrokeColor="@color/transparent"
+                app:boxStrokeWidth="@dimen/padding0"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextField"
+                app:startIconContentDescription="123">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PrimaryTextInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/valdiation_correct_icon"
+                    android:hint="@string/email_label"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextField"
+                style="@style/PrimaryTextFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accentButtonHeight"
+                android:layout_marginStart="@dimen/padding24"
+                android:layout_marginTop="@dimen/padding24"
+                android:layout_marginEnd="@dimen/padding24"
+                android:background="@drawable/rounded_text_fields"
+                app:boxStrokeColor="@color/transparent"
+                app:boxStrokeWidth="@dimen/padding0"
+                app:endIconDrawable="@drawable/close_eye_icon"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PrimaryTextInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/password_label"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/singUpButton"
+                style="@style/PrimaryButtonStyle"
+                android:layout_marginStart="@dimen/padding24"
+                android:layout_marginEnd="@dimen/padding24"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/get_started"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding24"
+                android:layout_marginBottom="@dimen/padding24"
+                app:layout_constraintBottom_toTopOf="@+id/singUpButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
+
+            <TextView
+                android:id="@+id/createYouAccountTextView"
+                style="@style/PrimaryTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_your_account"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

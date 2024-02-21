@@ -10,7 +10,6 @@ import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.silentmoon.databinding.OnBoardingFragmentBinding
@@ -36,7 +35,7 @@ class OnBoardingFragment : Fragment(R.layout.on_boarding_fragment) {
 
         binding.singUpButton.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.main_activity_coordinator_layout, LoginFragment())
+                .replace(R.id.main_activity_coordinator_layout, RegistrationFragment())
                 .addToBackStack(null)
                 .commit()
         }
@@ -46,7 +45,10 @@ class OnBoardingFragment : Fragment(R.layout.on_boarding_fragment) {
         val spannableString = SpannableString(fullText)
         val clickableSpan = object : ClickableSpan() {
             override fun onClick(widget: View) {
-                Toast.makeText(context, R.string.forgot_password_toast, Toast.LENGTH_SHORT).show()
+                parentFragmentManager.beginTransaction()
+                    .replace(R.id.main_activity_coordinator_layout, LoginFragment())
+                    .addToBackStack(null)
+                    .commit()
             }
 
             override fun updateDrawState(ds: TextPaint) {
