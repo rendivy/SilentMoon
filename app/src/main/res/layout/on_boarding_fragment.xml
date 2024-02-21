@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greetings_background">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/airbnb_cereal_bold"
+            android:gravity="center"
+            android:letterSpacing="0.24"
+            android:lineSpacingExtra="1.8dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/silent"
+            android:textFontWeight="400"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_for_greetings_screen"
+            android:src="@drawable/silent_moon_logo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/airbnb_cereal_bold"
+            android:letterSpacing="0.24"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@string/moon"
+            android:textFontWeight="400"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/singUpButton"
+        style="@style/PrimaryButtonStyle"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_for_greetings_screen"
+        android:src="@drawable/sing_up_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/we_are_logo"
+        android:textAlignment="center"
+        android:textColor="#3F414E"
+        android:textSize="28sp"
+        android:textFontWeight="900"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/meditation_text_logo"
+        android:textAlignment="center"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="24dp"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/haveAnAccountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/gray"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:textSize="14sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
