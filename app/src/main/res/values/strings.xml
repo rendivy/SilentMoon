@@ -36,6 +36,12 @@
 
     <!-- Toast messages -->
     <string name="forgot_password_toast">That very bad!</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="or_sign_up_with_email">OR SIGN UP WITH EMAIL</string>
+    <string name="your_name">Your name</string>
+    <string name="get_started">GET STARTED</string>
 
 
 </resources>

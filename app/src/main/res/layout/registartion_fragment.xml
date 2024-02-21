@@ -64,10 +64,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/padding24"
-                android:text="@string/login_email_label"
+                android:text="@string/or_sign_up_with_email"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/googleButton" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTextField"
+                style="@style/PrimaryTextFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/accentButtonHeight"
+                android:layout_marginStart="@dimen/padding24"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/padding24"
+                app:boxStrokeColor="@color/transparent"
+                app:boxStrokeWidth="@dimen/padding0"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginWithEmailLabel"
+                app:startIconContentDescription="123">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PrimaryTextInputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/valdiation_correct_icon"
+                    android:hint="@string/your_name"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -76,14 +103,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/accentButtonHeight"
                 android:layout_marginStart="@dimen/padding24"
-                android:layout_marginTop="@dimen/padding24"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="@dimen/padding24"
                 app:boxStrokeColor="@color/transparent"
                 app:boxStrokeWidth="@dimen/padding0"
                 app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/loginWithEmailLabel"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextField"
                 app:startIconContentDescription="123">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -128,62 +155,32 @@
                 android:id="@+id/singUpButton"
                 style="@style/PrimaryButtonStyle"
                 android:layout_marginStart="@dimen/padding24"
-                android:layout_marginTop="@dimen/padding24"
                 android:layout_marginEnd="@dimen/padding24"
+                android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/blue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
-
-
-            <TextView
-                android:id="@+id/haveAnAccountLabel"
-                style="@style/PrimaryTextViewStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/paddingLarge"
-                android:paddingStart="@dimen/paddingTiny"
-                android:paddingEnd="@dimen/paddingTiny"
-                android:text="@string/already_have_an_account"
+                android:text="@string/get_started"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent" />
 
-            </TextView>
-
-
-            <TextView
-                android:id="@+id/forgotPasswordLabel"
-                style="@style/RobotoNormal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding24"
-                android:fontFamily="@font/roboto_regular"
-                android:paddingStart="@dimen/paddingTiny"
-                android:paddingEnd="@dimen/paddingTiny"
-                android:text="@string/forgot_password"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/singUpButton">
-
-            </TextView>
 
             <Space
+                android:id="@+id/space"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/padding24"
                 android:layout_marginBottom="@dimen/padding24"
-                app:layout_constraintBottom_toTopOf="@+id/haveAnAccountLabel"
+                app:layout_constraintBottom_toTopOf="@+id/singUpButton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/forgotPasswordLabel" />
+                app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
 
             <TextView
                 android:id="@+id/createYouAccountTextView"
                 style="@style/PrimaryTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome_back"
+                android:text="@string/create_your_account"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

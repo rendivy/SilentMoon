@@ -32,8 +32,6 @@
     </style>
 
 
-
-
     <!-- Styles for text -->
     <style name="PrimaryTextStyle">
         <item name="android:fontFamily">@font/roboto_bold</item>
@@ -53,6 +51,7 @@
         <item name="android:textColor">@color/text_edit_color</item>
         <item name="android:textSize">16sp</item>
     </style>
+
 
 
 </resources>
