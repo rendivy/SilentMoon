@@ -22,5 +22,6 @@
     <string name="facebook_button_label">CONTINUE WITH FACEBOOK</string>
     <string name="continue_with_google">CONTINUE WITH GOOGLE</string>
     <string name="email_address">Email address</string>
+    <string name="forgot_password">Forgot password?</string>
 
 </resources>

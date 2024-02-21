@@ -28,7 +28,7 @@ class OnBoardingFragment : Fragment(R.layout.on_boarding_fragment) {
 
         binding.someId.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.main_activity_coordinator_layout, FirstRegistrationFragment())
+                .replace(R.id.main_activity_coordinator_layout, LoginFragment())
                 .addToBackStack(null)
                 .commit()
         }
