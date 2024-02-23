@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.silentmoon.databinding.LoginFragmentBinding
+import com.example.silentmoon.utils.clearAllBackStack
 
 class LoginFragment : Fragment(R.layout.login_fragment) {
 
@@ -24,9 +25,21 @@ class LoginFragment : Fragment(R.layout.login_fragment) {
         savedInstanceState: Bundle?
     ): View {
 
+
         binding = LoginFragmentBinding.inflate(inflater, container, false)
         binding.forgotPasswordLabel.setOnClickListener {
             Toast.makeText(context, R.string.forgot_password_toast, Toast.LENGTH_SHORT).show()
+        }
+        binding.singUpButton.setOnClickListener {
+            parentFragmentManager.clearAllBackStack()
+            parentFragmentManager.beginTransaction()
+                .replace(
+                    R.id.main_activity_coordinator_layout,
+                    WelcomeFragment(binding.emailTextField.editText?.text.toString()),
+                    null
+                )
+                .commit()
+
         }
 
 
