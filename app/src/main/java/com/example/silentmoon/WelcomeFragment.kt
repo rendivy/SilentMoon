@@ -25,7 +25,7 @@ class WelcomeFragment(private val userName: String) : Fragment(R.layout.welcome_
         val fullTextTemplate = getString(R.string.hi_yuriy_welcome_to_silent_moon)
         val fullText = fullTextTemplate.replace("Yuriy", userName)
 
-        val partToSpan = "to Silent Moon"
+        val partToSpan = getString(R.string.silent_moon_span)
         val spannableString = SpannableString(fullText)
 
         val typeface = ResourcesCompat.getFont(requireContext(), R.font.roboto_regular)
@@ -40,6 +40,15 @@ class WelcomeFragment(private val userName: String) : Fragment(R.layout.welcome_
             Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
         )
 
+        binding.singUpButton.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(
+                    R.id.main_activity_coordinator_layout,
+                    ChooseTopicFragment()
+                )
+                .addToBackStack(null)
+                .commit()
+        }
         binding.appLabelTextView.text = spannableString
 
         return binding.root
