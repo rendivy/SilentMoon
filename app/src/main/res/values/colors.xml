@@ -17,4 +17,13 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
     <color name="gray_overlay_50">#3F414E</color>
+    <color name="purpura_blue">#8E97FD</color>
+    <color name="yellow_card_background">#FFCF86</color>
+    <color name="orange_light_card_background">#FEB18F</color>
+    <color name="orange_card_background">#FA6E5A</color>
+    <color name="green_card_background">#6CB28E</color>
+    <color name="black_card_background">#3F414E</color>
+    <color name="improve_card_background">#D9A5B5</color>
+    <color name="improve_card_font_color">#B1506E</color>
+    <color name="reduce_anxiety_card_background">#7583CA</color>
 </resources>

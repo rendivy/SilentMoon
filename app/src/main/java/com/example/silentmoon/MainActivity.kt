@@ -11,7 +11,6 @@ import com.example.silentmoon.factory.AppFragmentFactory
 
 class MainActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         supportFragmentManager.fragmentFactory = AppFragmentFactory {
