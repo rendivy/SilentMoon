@@ -6,24 +6,26 @@ import android.view.MotionEvent
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.silentmoon.databinding.ActivityMainBinding
+import com.example.silentmoon.factory.AppFragmentFactory
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        supportFragmentManager.fragmentFactory = AppFragmentFactory {
+            WelcomeFragment("Default User Name")
+        }
+
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.main_activity_coordinator_layout, OnBoardingFragment())
+                .add(R.id.main_activity_coordinator_layout, OnBoardingFragment())
                 .commit()
         }
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
     }
-
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_DOWN) {

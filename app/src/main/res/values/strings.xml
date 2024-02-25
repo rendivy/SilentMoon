@@ -42,6 +42,14 @@
     <string name="or_sign_up_with_email">OR SIGN UP WITH EMAIL</string>
     <string name="your_name">Your name</string>
     <string name="get_started">GET STARTED</string>
+    <string name="hi_yuriy_welcome_to_silent_moon">Hi Yuriy, Welcome to Silent Moon</string>
+    <string name="silent_moon_span">to Silent Moon</string>
+    <string name="explore_the_app_find_some_peace_of_mind_to_prepare_for_meditation">Explore the app, Find some peace of mind to prepare for meditation.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reduce_anxiety">Reduce anxiety</string>
+    <string name="what_brings_you_to_silent_moon">What Brings you\nto Silent Moon?</string>
+    <string name="choose_a_topic_to_focuse_on">choose a topic to focuse on:</string>
 
 
 </resources>
