@@ -53,6 +53,7 @@
     <string name="welcome_to_sleep">Welcome to Sleep</string>
     <string name="welcome_to_sleep_description">Explore the new king of sleep. It uses sound and visualization to create the perfect conditions for refreshing sleep</string>
     <string name="night_island_label">Night Island</string>
+    <string name="sleep_music_label">Sleep Music</string>
 
 
 </resources>

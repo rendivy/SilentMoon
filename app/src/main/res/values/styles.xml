@@ -59,5 +59,11 @@
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
 
+    <style name="SleepPrimaryFontStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textColor">@color/sleepOnBackground</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
 
 </resources>
