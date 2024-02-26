@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.factory.AppFragmentFactory
+import com.example.silentmoon.screens.onboarding.OnBoardingFragment
+import com.example.silentmoon.screens.welcome.WelcomeFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             WelcomeFragment("Default User Name")
         }
 
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -26,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
     }
+
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_DOWN) {

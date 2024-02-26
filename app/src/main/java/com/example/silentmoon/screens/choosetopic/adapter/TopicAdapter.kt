@@ -1,4 +1,4 @@
-package com.example.silentmoon.adapter
+package com.example.silentmoon.screens.choosetopic.adapter
 
 import android.content.Context
 import android.graphics.drawable.GradientDrawable
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ChooseTopicItemBinding
-import com.example.silentmoon.entity.TopicItem
+import com.example.silentmoon.screens.choosetopic.item.TopicItem
 
 class TopicAdapter(private inline val onItemClick: () -> Unit) :
     ListAdapter<TopicItem, TopicAdapter.TopicViewHolder>(DiffUtilTopicCallback()) {
@@ -34,6 +34,9 @@ class TopicAdapter(private inline val onItemClick: () -> Unit) :
             }
         }
     }
+
+    class TopicViewHolder(val binding: ChooseTopicItemBinding) :
+        RecyclerView.ViewHolder(binding.root)
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopicViewHolder {
@@ -58,7 +61,7 @@ class TopicAdapter(private inline val onItemClick: () -> Unit) :
             root.background = drawable
 
             val dpValue =
-                if (position % 2 == 0) MAXIMUM_CARD_HEIGHT else ViewGroup.LayoutParams.WRAP_CONTENT.toFloat()
+                if (position % 2 == 0) MAXIMUM_CARD_HEIGHT else MINIMUM_CARD_HEIGHT
             val pixels = TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP,
                 dpValue,
@@ -86,7 +89,5 @@ class TopicAdapter(private inline val onItemClick: () -> Unit) :
     }
 
 
-    class TopicViewHolder(val binding: ChooseTopicItemBinding) :
-        RecyclerView.ViewHolder(binding.root)
 }
 
