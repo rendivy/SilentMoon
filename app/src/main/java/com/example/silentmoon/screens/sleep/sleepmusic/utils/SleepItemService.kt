@@ -1,61 +1,80 @@
 package com.example.silentmoon.screens.sleep.sleepmusic.utils
 
 import com.example.silentmoon.R
-import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepMusicItem
+import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepCategoryItem
+import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepMusicCardItem
 
 data object SleepItemService {
 
-    val sleepMusicItemList = listOf(
-        SleepMusicItem(
+    val categoryList = listOf(
+        SleepCategoryItem(
+            imageId = R.drawable.all_catergories_icon,
+            text = "All"
+        ),
+        SleepCategoryItem(
+            imageId = R.drawable.my_item_icon,
+            text = "My"
+        ),
+        SleepCategoryItem(
+            imageId = R.drawable.anxious_item_icon,
+            text = "Anxious"
+        ),
+        SleepCategoryItem(
+            imageId = R.drawable.sleep_item_icon,
+            text = "Sleep"
+        ),
+        SleepCategoryItem(
+            imageId = R.drawable.kids_item_icon,
+            text = "Kids"
+        ),
+        SleepCategoryItem(
+            imageId = R.drawable.happy_item_icon,
+            text = "Nature"
+        ),
+    )
+
+
+    val musicCardItemList = listOf(
+        SleepMusicCardItem(
             imageId = R.drawable.night_island_icon,
             text = "Night Island"
         ),
-        SleepMusicItem(
-            imageId = R.drawable.good_night_icon,
+        SleepMusicCardItem(
+            imageId = R.drawable.sweet_sleep_icon,
+            text = "Sweet sleep"
+        ),
+        SleepMusicCardItem(
+            imageId = R.drawable.good_sleep_icon,
             text = "Good Night"
         ),
-        SleepMusicItem(
-            imageId = R.drawable.sweet_sleep_icon,
+        SleepMusicCardItem(
+            imageId = R.drawable.moon_clouds_icon,
             text = "Moon Clouds"
         ),
-        SleepMusicItem(
+        SleepMusicCardItem(
+            imageId = R.drawable.sweet_sleep_icon,
+            text = "Sweet sleep"
+        ),
+        SleepMusicCardItem(
+            imageId = R.drawable.night_island_icon,
+            text = "Night Island"
+        ),
+
+        SleepMusicCardItem(
+            imageId = R.drawable.moon_clouds_icon,
+            text = "Moon Clouds"
+        ),
+        SleepMusicCardItem(
+            imageId = R.drawable.sweet_sleep_icon,
+            text = "Sweet sleep"
+        ),
+        SleepMusicCardItem(
             imageId = R.drawable.good_sleep_icon,
             text = "Good Night"
         ),
-        SleepMusicItem(
-            imageId = R.drawable.moon_cloud_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.night_island_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.good_night_icon,
-            text = "Good Night"
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.sweet_sleep_icon
-        ),
-        SleepMusicItem(
+        SleepMusicCardItem(
             imageId = R.drawable.good_sleep_icon,
-            text = "Good Sleep"
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.moon_cloud_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.night_island_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.good_night_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.sweet_sleep_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.good_sleep_icon
-        ),
-        SleepMusicItem(
-            imageId = R.drawable.moon_cloud_icon
+            text = "Good Night"
         ),
     )
 }

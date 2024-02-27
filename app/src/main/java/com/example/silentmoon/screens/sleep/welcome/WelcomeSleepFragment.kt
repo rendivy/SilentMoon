@@ -1,4 +1,4 @@
-package com.example.silentmoon.screens.sleep
+package com.example.silentmoon.screens.sleep.welcome
 
 import android.os.Bundle
 import android.view.LayoutInflater

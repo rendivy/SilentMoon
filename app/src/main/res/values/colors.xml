@@ -19,6 +19,7 @@
     <color name="gray_overlay_50">#3F414E</color>
     <color name="purpura_blue">#8E97FD</color>
     <color name="yellow_card_background">#FFCF86</color>
+    <color name="ocean_moon_font_color">#FFE7BF</color>
     <color name="orange_light_card_background">#FEB18F</color>
     <color name="orange_card_background">#FA6E5A</color>
     <color name="green_card_background">#6CB28E</color>
@@ -27,5 +28,11 @@
     <color name="improve_card_font_color">#B1506E</color>
     <color name="reduce_anxiety_card_background">#7583CA</color>
     <color name="sleepOnBackground">#E6E7F2</color>
+    <color name="ocean_moon_text_color">#F9F9FF</color>
     <color name="sleepAccent">#03174C</color>
+
+
+
+    <!-- Sleep Categories -->
+    <color name="categoriesNoActiveBackground">#586894</color>
 </resources>
