@@ -7,7 +7,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.factory.AppFragmentFactory
-import com.example.silentmoon.screens.sleep.sleepmusic.SleepMusicFragment
+import com.example.silentmoon.screens.sleep.SleepFragment
 import com.example.silentmoon.screens.welcome.WelcomeFragment
 
 
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.main_activity_coordinator_layout, SleepMusicFragment())
+                .add(R.id.main_activity_coordinator_layout, SleepFragment())
                 .commit()
         }
     }

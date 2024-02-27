@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingStart="16dp"
-    android:paddingEnd="0dp">
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/cardImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/night_island_icon" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/cardLabel"
         style="@style/SleepPrimaryFontStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -26,24 +26,23 @@
         android:text="@string/night_island_label"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/cardImage" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/cardDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="20dp"
         android:gravity="start"
-        android:text="45 MIN • SLEEP MUSIC"
+        android:text="@string/sleep_card_description"
         android:textColor="#98A1BD"
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/cardLabel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

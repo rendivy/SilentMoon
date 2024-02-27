@@ -7,26 +7,26 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.databinding.SleepItemBinding
-import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepMusicItem
+import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepMusicCardItem
 
-class SleepMusicAdapter :
-    ListAdapter<SleepMusicItem, SleepMusicAdapter.SleepViewHolder>(DiffUtilTopicCallback()) {
+class SleepMusicCardAdapter :
+    ListAdapter<SleepMusicCardItem, SleepMusicCardAdapter.SleepViewHolder>(DiffUtilTopicCallback()) {
 
 
     private companion object {
 
-        class DiffUtilTopicCallback : DiffUtil.ItemCallback<SleepMusicItem>() {
+        class DiffUtilTopicCallback : DiffUtil.ItemCallback<SleepMusicCardItem>() {
 
             override fun areItemsTheSame(
-                oldItem: SleepMusicItem,
-                newItem: SleepMusicItem
+                oldItem: SleepMusicCardItem,
+                newItem: SleepMusicCardItem
             ): Boolean {
                 return oldItem.imageId == newItem.imageId
             }
 
             override fun areContentsTheSame(
-                oldItem: SleepMusicItem,
-                newItem: SleepMusicItem
+                oldItem: SleepMusicCardItem,
+                newItem: SleepMusicCardItem
             ): Boolean {
                 return oldItem == newItem
             }
@@ -51,8 +51,8 @@ class SleepMusicAdapter :
     override fun onBindViewHolder(holder: SleepViewHolder, position: Int) {
         val item = getItem(position)
         with(holder.binding) {
-            setImageResource(imageView5, item.imageId)
-            textView9.text = item.text
+            setImageResource(cardImage, item.imageId)
+            cardLabel.text = item.text
         }
     }
 

@@ -54,6 +54,14 @@
     <string name="welcome_to_sleep_description">Explore the new king of sleep. It uses sound and visualization to create the perfect conditions for refreshing sleep</string>
     <string name="night_island_label">Night Island</string>
     <string name="sleep_music_label">Sleep Music</string>
+    <string name="sleep_title_label">Sleep Stories</string>
+    <string name="sleep_title_desc">Soothing bedtime stories to help you fall\ninto a deep and natural sleep</string>
+    <string name="all_categories_label">All</string>
+    <string name="ocean_moon_button_label">START</string>
+    <string name="ocean_moon_image">Ocean moon image</string>
+    <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
+    <string name="the_ocean_moon_label">The Ocean Moon</string>
+    <string name="sleep_card_description">45 MIN • SLEEP MUSIC</string>
 
 
 </resources>

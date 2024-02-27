@@ -19,6 +19,17 @@
         <item name="android:fontFamily">@font/helvetica_neue_medium</item>
     </style>
 
+
+    <style name="OceanMoonButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/oceanButtonHeight</item>
+        <item name="android:backgroundTint">@color/light_gray_stroke</item>
+        <item name="android:text">@string/sign_up</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_card_background</item>
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+    </style>
+
     <style name="PrimaryTextFieldStyle">
         <item name="android:background">@drawable/rounded_text_fields</item>
         <item name="android:backgroundTint">#FFF2F3F7</item>
@@ -63,6 +74,13 @@
         <item name="android:fontFamily">@font/helvetica_neue_bold</item>
         <item name="android:textColor">@color/sleepOnBackground</item>
         <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="SleepSecondaryFontStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_regular</item>
+        <item name="android:textColor">@color/sleepOnBackground</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
 
