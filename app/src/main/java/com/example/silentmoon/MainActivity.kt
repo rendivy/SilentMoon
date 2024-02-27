@@ -7,6 +7,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.factory.AppFragmentFactory
+import com.example.silentmoon.screens.sleep.sleepmusic.SleepMusicFragment
+import com.example.silentmoon.screens.welcome.WelcomeFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,15 +19,17 @@ class MainActivity : AppCompatActivity() {
             WelcomeFragment("Default User Name")
         }
 
+        //enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.main_activity_coordinator_layout, OnBoardingFragment())
+                .add(R.id.main_activity_coordinator_layout, SleepMusicFragment())
                 .commit()
         }
     }
+
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_DOWN) {

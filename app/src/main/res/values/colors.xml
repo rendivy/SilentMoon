@@ -26,4 +26,6 @@
     <color name="improve_card_background">#D9A5B5</color>
     <color name="improve_card_font_color">#B1506E</color>
     <color name="reduce_anxiety_card_background">#7583CA</color>
+    <color name="sleepOnBackground">#E6E7F2</color>
+    <color name="sleepAccent">#03174C</color>
 </resources>

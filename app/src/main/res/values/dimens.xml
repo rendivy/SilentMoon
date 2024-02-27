@@ -6,6 +6,7 @@
     <dimen name="padding0">0dp</dimen>
     <dimen name="paddingTiny">4dp</dimen>
     <dimen name="paddingLarge">32dp</dimen>
+    <dimen name="paddingExtraLarge">64dp</dimen>
 
     <!-- Size for ui element (button height, icon size, ...)-->
     <dimen name="accentButtonHeight">63dp</dimen>

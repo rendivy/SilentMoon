@@ -1,7 +1,7 @@
-package com.example.silentmoon.adapter
+package com.example.silentmoon.screens.choosetopic.adapter
 
 import com.example.silentmoon.R
-import com.example.silentmoon.entity.TopicItem
+import com.example.silentmoon.screens.choosetopic.item.TopicItem
 
 object TopicService {
 
@@ -40,6 +40,7 @@ object TopicService {
             textColor = R.color.white,
             backgroundColor = R.color.black_card_background
         ),
+
         TopicItem(
             R.drawable.reduce_stress_icon,
             label = "Reduce Anxiety",

@@ -1,4 +1,4 @@
-package com.example.silentmoon.entity
+package com.example.silentmoon.screens.choosetopic.item
 
 import com.example.silentmoon.R
 

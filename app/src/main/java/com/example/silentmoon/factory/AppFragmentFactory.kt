@@ -2,7 +2,7 @@ package com.example.silentmoon.factory
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import com.example.silentmoon.WelcomeFragment
+import com.example.silentmoon.screens.welcome.WelcomeFragment
 
 class AppFragmentFactory(private val fragmentProvider: () -> Fragment) : FragmentFactory() {
 
