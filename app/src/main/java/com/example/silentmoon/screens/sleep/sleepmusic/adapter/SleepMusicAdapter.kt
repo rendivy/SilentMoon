@@ -52,6 +52,7 @@ class SleepMusicAdapter :
         val item = getItem(position)
         with(holder.binding) {
             setImageResource(imageView5, item.imageId)
+            textView9.text = item.text
         }
     }
 

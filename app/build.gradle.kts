@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+
 android {
     namespace = "com.example.silentmoon"
     compileSdk = 34
@@ -39,6 +40,8 @@ android {
 }
 
 dependencies {
+    implementation("com.github.ozcanalasalvar.picker:datepicker:2.0.7")
+    implementation("com.github.ozcanalasalvar.picker:wheelview:2.0.7")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
