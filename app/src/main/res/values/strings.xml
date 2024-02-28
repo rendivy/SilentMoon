@@ -62,6 +62,12 @@
     <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
     <string name="the_ocean_moon_label">The Ocean Moon</string>
     <string name="sleep_card_description">45 MIN • SLEEP MUSIC</string>
+    <string name="sleep_details_label">Night Island</string>
+    <string name="sleep_details_desc">Ease the mind into a restful night’s sleep with\nthese deep, ambient tones.</string>
+    <string name="favourites_count">24.234 Favourites</string>
+    <string name="listen_count">34.234 Listening</string>
+    <string name="related_label">Related</string>
+    <string name="play_label">PLAY</string>
 
 
 </resources>

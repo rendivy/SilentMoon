@@ -4,6 +4,7 @@
     <!-- Paddings for ui component -->
     <dimen name="padding0">0dp</dimen>
     <dimen name="padding10">10dp</dimen>
+    <dimen name="padding20">20dp</dimen>
     <dimen name="padding24">24dp</dimen>
     <dimen name="paddingTiny">4dp</dimen>
     <dimen name="paddingLarge">32dp</dimen>

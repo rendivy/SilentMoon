@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.databinding.SleepItemBinding
 import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepMusicCardItem
 
-class SleepMusicCardAdapter :
+class SleepMusicCardAdapter(private inline val onClick: (Int, String) -> Unit) :
     ListAdapter<SleepMusicCardItem, SleepMusicCardAdapter.SleepViewHolder>(DiffUtilTopicCallback()) {
 
 
@@ -51,8 +51,14 @@ class SleepMusicCardAdapter :
     override fun onBindViewHolder(holder: SleepViewHolder, position: Int) {
         val item = getItem(position)
         with(holder.binding) {
+
+            root.setOnClickListener{
+                onClick(item.imageId, item.text)
+            }
+
             setImageResource(cardImage, item.imageId)
             cardLabel.text = item.text
+
         }
     }
 

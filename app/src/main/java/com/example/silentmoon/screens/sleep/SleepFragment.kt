@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.silentmoon.R
+import com.example.silentmoon.SleepDetailsFragment
 import com.example.silentmoon.databinding.SleepFragmentBinding
 import com.example.silentmoon.screens.sleep.sleepmusic.SleepMusicFragment
 import com.example.silentmoon.screens.sleep.sleepmusic.adapter.CategoryAdapter
@@ -18,7 +19,16 @@ class SleepFragment : Fragment(R.layout.sleep_fragment) {
 
     private lateinit var binding: SleepFragmentBinding
 
-    private val viewAdapter: SleepMusicCardAdapter = SleepMusicCardAdapter()
+    private val viewAdapter: SleepMusicCardAdapter = SleepMusicCardAdapter { imageId, text ->
+        parentFragmentManager.beginTransaction()
+            .replace(
+                R.id.main_activity_coordinator_layout,
+                SleepDetailsFragment(imageId, text)
+            )
+            .addToBackStack(null)
+            .commit()
+
+    }
     private val categoryAdapter: CategoryAdapter = CategoryAdapter()
 
     override fun onCreateView(

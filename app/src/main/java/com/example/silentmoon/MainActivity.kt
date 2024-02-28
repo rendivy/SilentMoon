@@ -15,9 +15,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        supportFragmentManager.fragmentFactory = AppFragmentFactory {
-            WelcomeFragment("Default User Name")
-        }
+        supportFragmentManager.fragmentFactory = AppFragmentFactory(
+            welcomeFragmentProvider = { WelcomeFragment("Default User Name") },
+            sleepDetailsFragmentProvider = {
+                SleepDetailsFragment(
+                    R.drawable.night_island_icon,
+                    "Sleep Music"
+                )
+            }
+        )
+
+
 
         //enableEdgeToEdge()
         super.onCreate(savedInstanceState)
