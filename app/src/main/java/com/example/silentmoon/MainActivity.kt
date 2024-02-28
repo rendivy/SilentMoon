@@ -20,14 +20,16 @@ class MainActivity : AppCompatActivity() {
             sleepDetailsFragmentProvider = {
                 SleepDetailsFragment(
                     R.drawable.night_island_icon,
-                    "Sleep Music"
+                    getString(R.string.sleep_music_label)
+                )
+            },
+            sleepMusicFragmentProvider = {
+                SleepPlayerFragment(
+                    getString(R.string.night_island_label)
                 )
             }
         )
 
-
-
-        //enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 

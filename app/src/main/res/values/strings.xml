@@ -55,6 +55,7 @@
     <string name="night_island_label">Night Island</string>
     <string name="sleep_music_label">Sleep Music</string>
     <string name="sleep_title_label">Sleep Stories</string>
+    <string name="sleep_music_desc">SLEEP MUSIC</string>
     <string name="sleep_title_desc">Soothing bedtime stories to help you fall\ninto a deep and natural sleep</string>
     <string name="all_categories_label">All</string>
     <string name="ocean_moon_button_label">START</string>
@@ -70,6 +71,8 @@
     <string name="listen_increased">34.235 Listening</string>
     <string name="related_label">Related</string>
     <string name="play_label">PLAY</string>
+    <string name="music_start_value">00:00</string>
+    <string name="music_end_value">45:00</string>
 
 
 </resources>

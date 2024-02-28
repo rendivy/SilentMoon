@@ -18,6 +18,7 @@
     <color name="black_overlay">#66000000</color>
     <color name="gray_overlay_50">#3F414E</color>
     <color name="purpura_blue">#8E97FD</color>
+    <color name="purpura_blue_alpha60">#608E97FD</color>
     <color name="yellow_card_background">#FFCF86</color>
     <color name="ocean_moon_font_color">#FFE7BF</color>
     <color name="orange_light_card_background">#FEB18F</color>
@@ -30,6 +31,7 @@
     <color name="sleepOnBackground">#E6E7F2</color>
     <color name="ocean_moon_text_color">#F9F9FF</color>
     <color name="sleepAccent">#03174C</color>
+    <color name="sliderInactive">#47557E</color>
     <color name="light_dark_sleep_text">#98A1BD</color>
 
 
