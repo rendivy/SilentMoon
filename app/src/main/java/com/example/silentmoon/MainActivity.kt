@@ -7,25 +7,37 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.factory.AppFragmentFactory
+import com.example.silentmoon.screens.sleep.SleepFragment
+import com.example.silentmoon.screens.welcome.WelcomeFragment
 
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        supportFragmentManager.fragmentFactory = AppFragmentFactory {
-            WelcomeFragment("Default User Name")
-        }
+        supportFragmentManager.fragmentFactory = AppFragmentFactory(
+            welcomeFragmentProvider = { WelcomeFragment("Default User Name") },
+            sleepDetailsFragmentProvider = {
+                SleepDetailsFragment(
+                    R.drawable.night_island_icon,
+                    "Sleep Music"
+                )
+            }
+        )
 
+
+
+        //enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.main_activity_coordinator_layout, OnBoardingFragment())
+                .add(R.id.main_activity_coordinator_layout, SleepFragment())
                 .commit()
         }
     }
+
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_DOWN) {

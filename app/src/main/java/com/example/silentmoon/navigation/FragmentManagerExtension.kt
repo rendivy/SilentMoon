@@ -1,4 +1,4 @@
-package com.example.silentmoon.utils
+package com.example.silentmoon.navigation
 
 import androidx.fragment.app.FragmentManager
 

@@ -19,6 +19,17 @@
         <item name="android:fontFamily">@font/helvetica_neue_medium</item>
     </style>
 
+
+    <style name="OceanMoonButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/oceanButtonHeight</item>
+        <item name="android:backgroundTint">@color/light_gray_stroke</item>
+        <item name="android:text">@string/sign_up</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_card_background</item>
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+    </style>
+
     <style name="PrimaryTextFieldStyle">
         <item name="android:background">@drawable/rounded_text_fields</item>
         <item name="android:backgroundTint">#FFF2F3F7</item>
@@ -57,6 +68,42 @@
     <style name="Widget.Theme.SilentMoon.ButtonBar.Fullscreen" parent="">
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="SleepPrimaryFontStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textColor">@color/sleepOnBackground</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="SleepSecondaryFontStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_regular</item>
+        <item name="android:textColor">@color/sleepOnBackground</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SleepDescTextStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textColor">@color/sleepOnBackground</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SleepLightFontStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_light</item>
+        <item name="android:textColor">@color/light_dark_sleep_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BackButtonStyle">
+        <item name="android:background">@drawable/back_button_background</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
+    </style>
+
+
+    <style name="AdditionalButtonStyle">
+        <item name="android:background">@drawable/addittional_button_background</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
     </style>
 
 

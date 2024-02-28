@@ -50,6 +50,26 @@
     <string name="reduce_anxiety">Reduce anxiety</string>
     <string name="what_brings_you_to_silent_moon">What Brings you\nto Silent Moon?</string>
     <string name="choose_a_topic_to_focuse_on">choose a topic to focuse on:</string>
+    <string name="welcome_to_sleep">Welcome to Sleep</string>
+    <string name="welcome_to_sleep_description">Explore the new king of sleep. It uses sound and visualization to create the perfect conditions for refreshing sleep</string>
+    <string name="night_island_label">Night Island</string>
+    <string name="sleep_music_label">Sleep Music</string>
+    <string name="sleep_title_label">Sleep Stories</string>
+    <string name="sleep_title_desc">Soothing bedtime stories to help you fall\ninto a deep and natural sleep</string>
+    <string name="all_categories_label">All</string>
+    <string name="ocean_moon_button_label">START</string>
+    <string name="ocean_moon_image">Ocean moon image</string>
+    <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
+    <string name="the_ocean_moon_label">The Ocean Moon</string>
+    <string name="sleep_card_description">45 MIN • SLEEP MUSIC</string>
+    <string name="sleep_details_label">Night Island</string>
+    <string name="sleep_details_desc">Ease the mind into a restful night’s sleep with\nthese deep, ambient tones.</string>
+    <string name="favourites_count">24.234 Favourites</string>
+    <string name="favoured_increased">24.235 Favourites</string>
+    <string name="listen_count">34.234 Listening</string>
+    <string name="listen_increased">34.235 Listening</string>
+    <string name="related_label">Related</string>
+    <string name="play_label">PLAY</string>
 
 
 </resources>

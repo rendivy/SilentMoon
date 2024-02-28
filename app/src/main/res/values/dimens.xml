@@ -2,13 +2,19 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <!-- Paddings for ui component -->
-    <dimen name="padding24">24dp</dimen>
     <dimen name="padding0">0dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding24">24dp</dimen>
     <dimen name="paddingTiny">4dp</dimen>
     <dimen name="paddingLarge">32dp</dimen>
+    <dimen name="paddingMedium">16dp</dimen>
+    <dimen name="paddingExtraLarge">64dp</dimen>
 
     <!-- Size for ui element (button height, icon size, ...)-->
     <dimen name="accentButtonHeight">63dp</dimen>
+    <dimen name="oceanButtonHeight">35dp</dimen>
+
 
 
 

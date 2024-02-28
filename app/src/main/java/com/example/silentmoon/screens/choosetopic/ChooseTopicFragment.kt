@@ -1,6 +1,5 @@
-package com.example.silentmoon
+package com.example.silentmoon.screens.choosetopic
 
-import android.graphics.Rect
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
@@ -8,15 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.marginEnd
-import androidx.core.view.marginStart
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.silentmoon.adapter.TopicAdapter
-import com.example.silentmoon.adapter.TopicService
+import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ChooseTopicFragmentBinding
+import com.example.silentmoon.screens.choosetopic.adapter.TopicAdapter
+import com.example.silentmoon.screens.choosetopic.adapter.TopicService
+import com.example.silentmoon.screens.choosetopic.util.SpaceItemDecorator
+import com.example.silentmoon.screens.onboarding.OnBoardingFragment
+import com.example.silentmoon.screens.welcome.util.CustomTypefaceSpan
 
 
 class ChooseTopicFragment : Fragment(R.layout.choose_topic_fragment) {
@@ -71,28 +71,3 @@ class ChooseTopicFragment : Fragment(R.layout.choose_topic_fragment) {
 
 
 
-class SpaceItemDecorator : RecyclerView.ItemDecoration() {
-
-    override fun getItemOffsets(
-        outRect: Rect,
-        view: View,
-        parent: RecyclerView,
-        state: RecyclerView.State
-    ) {
-        super.getItemOffsets(outRect, view, parent, state)
-
-        val layoutParams = view.layoutParams as StaggeredGridLayoutManager.LayoutParams
-        val spanIndex = layoutParams.spanIndex
-
-        if (spanIndex == 0) {
-            val marginParentEnd = parent.marginEnd
-            layoutParams.marginEnd = marginParentEnd / 2
-        }
-        else {
-            val marginParentStart = parent.marginStart
-            layoutParams.marginStart = marginParentStart / 2
-        }
-
-        view.layoutParams = layoutParams
-    }
-}

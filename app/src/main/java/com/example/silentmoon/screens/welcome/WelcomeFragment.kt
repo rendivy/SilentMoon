@@ -1,17 +1,17 @@
-package com.example.silentmoon
+package com.example.silentmoon.screens.welcome
 
-import android.graphics.Typeface
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
-import android.text.TextPaint
-import android.text.style.MetricAffectingSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
+import com.example.silentmoon.R
 import com.example.silentmoon.databinding.WelcomeFragmentBinding
+import com.example.silentmoon.screens.choosetopic.ChooseTopicFragment
+import com.example.silentmoon.screens.welcome.util.CustomTypefaceSpan
 
 class WelcomeFragment(private val userName: String) : Fragment(R.layout.welcome_fragment) {
 
@@ -55,15 +55,4 @@ class WelcomeFragment(private val userName: String) : Fragment(R.layout.welcome_
     }
 
 
-}
-
-
-class CustomTypefaceSpan(private val typeface: Typeface) : MetricAffectingSpan() {
-    override fun updateMeasureState(p: TextPaint) {
-        p.typeface = typeface
-    }
-
-    override fun updateDrawState(tp: TextPaint) {
-        tp.typeface = typeface
-    }
 }
