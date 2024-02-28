@@ -60,16 +60,17 @@
 
         <ImageView
             android:id="@+id/oceanMoonImageView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/padding24"
             android:layout_marginTop="@dimen/paddingLarge"
             android:layout_marginEnd="@dimen/padding24"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/ocean_moon_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/categoriesRecyclerView"
-            app:srcCompat="@drawable/the_moon_background"
-            android:contentDescription="@string/ocean_moon_image" />
+            app:srcCompat="@drawable/the_moon_background" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/sleepRecyclerView"
@@ -115,14 +116,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/garamond_premier_pro"
             android:shadowColor="@color/ocean_moon_font_color"
             android:shadowDx="2"
             android:shadowDy="3"
             android:shadowRadius="5"
-            android:fontFamily="@font/garamond_premier_pro"
+            android:text="@string/the_ocean_moon_label"
             android:textColor="@color/ocean_moon_font_color"
             android:textSize="36sp"
-            android:text="@string/the_ocean_moon_label"
             app:layout_constraintBottom_toTopOf="@+id/oceanMoonDesc"
             app:layout_constraintEnd_toEndOf="@+id/oceanMoonImageView"
             app:layout_constraintStart_toStartOf="@+id/oceanMoonImageView" />
