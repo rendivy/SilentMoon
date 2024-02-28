@@ -65,7 +65,9 @@
     <string name="sleep_details_label">Night Island</string>
     <string name="sleep_details_desc">Ease the mind into a restful night’s sleep with\nthese deep, ambient tones.</string>
     <string name="favourites_count">24.234 Favourites</string>
+    <string name="favoured_increased">24.235 Favourites</string>
     <string name="listen_count">34.234 Listening</string>
+    <string name="listen_increased">34.235 Listening</string>
     <string name="related_label">Related</string>
     <string name="play_label">PLAY</string>
 

@@ -95,5 +95,16 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="BackButtonStyle">
+        <item name="android:background">@drawable/back_button_background</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
+    </style>
+
+
+    <style name="AdditionalButtonStyle">
+        <item name="android:background">@drawable/addittional_button_background</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
+    </style>
+
 
 </resources>
