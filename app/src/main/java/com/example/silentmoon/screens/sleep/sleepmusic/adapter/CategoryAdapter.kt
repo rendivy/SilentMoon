@@ -11,11 +11,12 @@ import com.example.silentmoon.R
 import com.example.silentmoon.databinding.SleepCategoriesItemBinding
 import com.example.silentmoon.screens.sleep.sleepmusic.item.SleepCategoryItem
 
-class CategoryAdapter : ListAdapter<SleepCategoryItem, CategoryAdapter.CategoryViewHolder>(
-    CategoryAdapter.Companion.DiffUtilTopicCallback()
-) {
+class CategoryAdapter(private val itemColor: Int? = null) :
+    ListAdapter<SleepCategoryItem, CategoryAdapter.CategoryViewHolder>(
+        CategoryAdapter.Companion.DiffUtilTopicCallback()
+    ) {
 
-    var selectedPosition = 0
+    private var selectedPosition = 0
 
     private companion object {
 
@@ -68,7 +69,7 @@ class CategoryAdapter : ListAdapter<SleepCategoryItem, CategoryAdapter.CategoryV
             } else {
                 ContextCompat.getDrawable(
                     root.context,
-                    R.drawable.category_item_unseletced_background
+                    itemColor ?: R.drawable.category_item_unseletced_background
                 )
             }
 

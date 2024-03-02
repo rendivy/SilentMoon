@@ -41,6 +41,7 @@ android {
 
 dependencies {
     implementation("com.github.ozcanalasalvar.picker:datepicker:2.0.7")
+    implementation("com.github.Dimezis:BlurView:version-2.0.3")
     implementation("com.github.ozcanalasalvar.picker:wheelview:2.0.7")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.12.0")
