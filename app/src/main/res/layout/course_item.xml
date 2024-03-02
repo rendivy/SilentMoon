@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/itemLabel"
+        style="@style/RobotoMediumTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding24"
+        android:text="@string/focus_attention"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="@+id/playButton" />
+
+    <TextView
+        android:id="@+id/itemDuration"
+        style="@style/RobotoMediumTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding24"
+        android:layout_marginTop="@dimen/paddingTiny"
+        android:text="@string/course_item_duration"
+        android:textColor="@color/light_gray"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/itemLabel" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="@dimen/playButtonSize"
+        android:layout_height="@dimen/playButtonSize"
+        android:layout_marginStart="@dimen/padding24"
+        android:layout_marginTop="@dimen/paddingLarge"
+        android:background="@drawable/course_button_stroke_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_play_button"
+        app:tint="@color/light_gray" />
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding24"
+        android:layout_marginTop="@dimen/padding24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDuration">
+
+    </com.google.android.material.divider.MaterialDivider>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,14 +55,17 @@
     <string name="night_island_label">Night Island</string>
     <string name="sleep_music_label">Sleep Music</string>
     <string name="sleep_title_label">Sleep Stories</string>
+    <string name="meditate_label">Meditate</string>
     <string name="sleep_music_desc">SLEEP MUSIC</string>
     <string name="sleep_title_desc">Soothing bedtime stories to help you fall\ninto a deep and natural sleep</string>
+    <string name="meditate_desc">We can learn to recognize when our mind is performing its normal daily acrobatics.</string>
     <string name="all_categories_label">All</string>
     <string name="ocean_moon_button_label">START</string>
     <string name="ocean_moon_image">Ocean moon image</string>
     <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
     <string name="the_ocean_moon_label">The Ocean Moon</string>
     <string name="sleep_card_description">45 MIN • SLEEP MUSIC</string>
+    <string name="daily_card_description">APR 30 • PAUSE PRACTICE</string>
     <string name="sleep_details_label">Night Island</string>
     <string name="sleep_details_desc">Ease the mind into a restful night’s sleep with\nthese deep, ambient tones.</string>
     <string name="favourites_count">24.234 Favourites</string>
@@ -73,6 +76,36 @@
     <string name="play_label">PLAY</string>
     <string name="music_start_value">00:00</string>
     <string name="music_end_value">45:00</string>
+    <string name="daily_calm_label">Daily Calm</string>
+    <string name="meditation_label">7 Days of Calm</string>
+
+
+    <!-- Strings used for the meditation category -->
+    <string name="calm_days_label">7 Days of Calm</string>
+    <string name="anxiety_label">Anxiety Release</string>
+    <string name="daily_reflection_label">Daily Reflections</string>
+    <string name="embracing_label">Embracing Stillness</string>
+    <string name="course_label">COURSE</string>
+    <string name="course_description">Ease the mind into a restful night’s sleep with these deep, ambient tones.</string>
+    <string name="male_voice_tab">MALE VOICE</string>
+    <string name="female_voice_tab">FEMALE VOICE</string>
+
+
+    <!-- Strings used for course_item -->
+    <string name="focus_attention">Focus Attention</string>
+    <string name="course_item_duration">10 MIN</string>
+    <string name="body_scan">Body Scan</string>
+    <string name="body_scan_duration">5 MIN</string>
+    <string name="make_happiness">Making Happiness</string>
+    <string name="make_happiness_duration">3 MIN</string>
+    <string name="self_compassion">Self compassion</string>
+    <string name="self_compassion_duration">4 MIN</string>
+    <string name="mindful_breathing">Mindful breathing</string>
+    <string name="mindful_breathing_duration">6 MIN</string>
+    <string name="loving_kindness">Loving kindness</string>
+    <string name="loving_kindness_duration">7 MIN</string>
+    <string name="pick_narrator">Pick a Narrator</string>
+    <string name="light_sleep_desc">7 DAYS OF CALM</string>
 
 
 </resources>

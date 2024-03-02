@@ -25,6 +25,8 @@ class SleepDetailsFragment(private val titleImageId: Int, private val titleText:
         savedInstanceState: Bundle?
     ): View {
         binding = SleepDetailsFragmentBinding.inflate(inflater, container, false)
+
+
         binding.playButton.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(
@@ -34,6 +36,7 @@ class SleepDetailsFragment(private val titleImageId: Int, private val titleText:
                 .addToBackStack(null)
                 .commit()
         }
+
         setupBackButton()
         setupFavouriteButton()
         setupDownloadButton()
@@ -82,7 +85,7 @@ class SleepDetailsFragment(private val titleImageId: Int, private val titleText:
     private fun setupRecyclerView() {
         binding.relatedRecyclerView.layoutManager = GridLayoutManager(this.context, 2)
         binding.relatedRecyclerView.adapter = viewAdapter
-        viewAdapter.submitList(SleepItemService.musicCardItemList)
+        viewAdapter.submitList(SleepItemService.relatedList)
     }
 
     private fun setupHeader() {

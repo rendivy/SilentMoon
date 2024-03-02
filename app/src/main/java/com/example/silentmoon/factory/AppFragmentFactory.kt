@@ -2,6 +2,7 @@ package com.example.silentmoon.factory
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
+import com.example.silentmoon.LightSleepFragment
 import com.example.silentmoon.SleepDetailsFragment
 import com.example.silentmoon.SleepPlayerFragment
 import com.example.silentmoon.screens.welcome.WelcomeFragment
@@ -17,6 +18,7 @@ class AppFragmentFactory(
             WelcomeFragment::class.java.name -> welcomeFragmentProvider()
             SleepDetailsFragment::class.java.name -> sleepDetailsFragmentProvider()
             SleepPlayerFragment::class.java.name -> sleepMusicFragmentProvider()
+            LightSleepFragment::class.java.name -> LightSleepFragment("Default User Name")
             else -> super.instantiate(classLoader, className)
         }
     }

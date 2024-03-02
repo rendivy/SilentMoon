@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ChooseTopicItemBinding
-import com.example.silentmoon.screens.choosetopic.item.TopicItem
+import com.example.silentmoon.screens.choosetopic.entity.TopicItem
 
 class TopicAdapter(private inline val onItemClick: () -> Unit) :
     ListAdapter<TopicItem, TopicAdapter.TopicViewHolder>(DiffUtilTopicCallback()) {

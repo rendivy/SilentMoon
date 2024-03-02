@@ -33,6 +33,25 @@ data object SleepItemService {
         ),
     )
 
+    val relatedList = listOf(
+        SleepMusicCardItem(
+            imageId = R.drawable.night_island_icon,
+            text = "Night Island"
+        ),
+        SleepMusicCardItem(
+            imageId = R.drawable.sweet_sleep_icon,
+            text = "Sweet sleep"
+        ),
+        SleepMusicCardItem(
+            imageId = R.drawable.good_sleep_icon,
+            text = "Good Night"
+        ),
+        SleepMusicCardItem(
+            imageId = R.drawable.moon_clouds_icon,
+            text = "Moon Clouds"
+        ),
+    )
+
 
     val musicCardItemList = listOf(
         SleepMusicCardItem(

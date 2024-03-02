@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.silentmoon.databinding.MusicFragmentBinding
+import com.example.silentmoon.databinding.LightSleepFragmentBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -17,11 +17,11 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 
-class SleepPlayerFragment(private val label: String) : Fragment(R.layout.music_fragment),
+class LightSleepFragment(private val label: String) : Fragment(R.layout.light_sleep_fragment),
     CoroutineScope by MainScope() {
 
 
-    private lateinit var binding: MusicFragmentBinding
+    private lateinit var binding: LightSleepFragmentBinding
     private var isFavourite = false
     private var isMusicPlaying = false
 
@@ -40,7 +40,7 @@ class SleepPlayerFragment(private val label: String) : Fragment(R.layout.music_f
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = MusicFragmentBinding.inflate(inflater, container, false)
+        binding = LightSleepFragmentBinding.inflate(inflater, container, false)
         binding.musicLabel.text = label
 
         binding.buttonBackground.setOnClickListener {
@@ -153,3 +153,6 @@ class SleepPlayerFragment(private val label: String) : Fragment(R.layout.music_f
         super.onDestroy()
     }
 }
+
+
+
