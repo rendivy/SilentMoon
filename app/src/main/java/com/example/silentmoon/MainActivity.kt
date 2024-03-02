@@ -7,7 +7,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.silentmoon.factory.AppFragmentFactory
-import com.example.silentmoon.screens.sleep.SleepFragment
+import com.example.silentmoon.screens.coursedetails.CourseDetailsFragment
 import com.example.silentmoon.screens.welcome.WelcomeFragment
 
 
@@ -20,20 +20,22 @@ class MainActivity : AppCompatActivity() {
             sleepDetailsFragmentProvider = {
                 SleepDetailsFragment(
                     R.drawable.night_island_icon,
-                    "Sleep Music"
+                    getString(R.string.sleep_music_label)
+                )
+            },
+            sleepMusicFragmentProvider = {
+                SleepPlayerFragment(
+                    getString(R.string.night_island_label)
                 )
             }
         )
 
-
-
-        //enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.main_activity_coordinator_layout, SleepFragment())
+                .add(R.id.main_activity_coordinator_layout, CourseDetailsFragment())
                 .commit()
         }
     }

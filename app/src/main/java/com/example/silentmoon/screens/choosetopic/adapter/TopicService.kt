@@ -1,7 +1,7 @@
 package com.example.silentmoon.screens.choosetopic.adapter
 
 import com.example.silentmoon.R
-import com.example.silentmoon.screens.choosetopic.item.TopicItem
+import com.example.silentmoon.screens.choosetopic.entity.TopicItem
 
 object TopicService {
 

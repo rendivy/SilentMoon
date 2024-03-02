@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_background"
+    tools:context=".SleepPlayerFragment">
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        style="@style/BackButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding24"
+        android:layout_marginTop="@dimen/paddingLarge"
+        android:src="@drawable/close_button_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/downloadButton"
+        style="@style/AdditionalButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingLarge"
+        android:layout_marginEnd="@dimen/padding24"
+        android:src="@drawable/download_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/favouriteButton"
+        style="@style/AdditionalButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingLarge"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/favourite_icon"
+        app:layout_constraintEnd_toStartOf="@+id/downloadButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/musicLabel"
+        style="@style/SleepPrimaryFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_island_label"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/musicDesc"
+        style="@style/SleepDescTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sleep_music_desc"
+        android:textColor="@color/light_dark_sleep_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicLabel" />
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paddingLarge"
+        android:layout_marginEnd="@dimen/paddingLarge"
+        android:layout_marginBottom="32dp"
+        android:value="0"
+        android:valueFrom="0.0"
+        android:valueTo="45"
+        app:haloColor="@color/purpura_blue_alpha60"
+        app:haloRadius="13dp"
+        app:labelBehavior="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/buttonRow"
+        app:thumbColor="@color/purpura_blue"
+        app:thumbRadius="7dp"
+        app:tickVisible="false"
+        app:trackColorActive="@color/sleepOnBackground"
+        app:trackColorInactive="@color/sliderInactive">
+
+    </com.google.android.material.slider.Slider>
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/SleepDescTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding24"
+        android:text="@string/music_start_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+    <TextView
+        android:id="@+id/textView13"
+        style="@style/SleepDescTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding24"
+        android:text="@string/music_end_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+
+    <LinearLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingLarge"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding24"
+        android:paddingEnd="@dimen/padding24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicDesc">
+
+        <ImageView
+            android:id="@+id/backMusicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/back_music_button" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/largeBackground"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="@drawable/large_background" />
+
+            <ImageView
+                android:id="@+id/buttonBackground"
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:background="@drawable/pause_icon_background"
+                android:padding="@dimen/paddingLarge"
+                android:src="@drawable/play_music_icon" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/forwardMusicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/forward_music_button" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

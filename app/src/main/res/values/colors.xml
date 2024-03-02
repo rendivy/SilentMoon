@@ -8,6 +8,7 @@
     <color name="transparent">#00000000</color>
     <color name="light_gray">#A1A4B2</color>
     <color name="light_gray_stroke">#EBEAEC</color>
+    <color name="light_gray_background">#BABCC6</color>
     <color name="welcome_label_color">#FFECCC</color>
     <color name="light_dark">#3F414E</color>
     <color name="text_edit_color">#3F414E</color>
@@ -18,6 +19,8 @@
     <color name="black_overlay">#66000000</color>
     <color name="gray_overlay_50">#3F414E</color>
     <color name="purpura_blue">#8E97FD</color>
+    <color name="purpura_blue_alpha60">#608E97FD</color>
+    <color name="light_gray_alpha60">#60A1A4B2</color>
     <color name="yellow_card_background">#FFCF86</color>
     <color name="ocean_moon_font_color">#FFE7BF</color>
     <color name="orange_light_card_background">#FEB18F</color>
@@ -29,11 +32,24 @@
     <color name="reduce_anxiety_card_background">#7583CA</color>
     <color name="sleepOnBackground">#E6E7F2</color>
     <color name="ocean_moon_text_color">#F9F9FF</color>
-    <color name="sleepAccent">#03174C</color>
-    <color name="light_dark_sleep_text">#98A1BD</color>
 
 
+    <!-- Meditation category -->
+    <color name="meditationAccentFont">#FEF9F3</color>
 
     <!-- Sleep Categories -->
     <color name="categoriesNoActiveBackground">#586894</color>
+    <color name="sleepAccent">#03174C</color>
+    <color name="sliderInactive">#47557E</color>
+    <color name="play_button_color">#F0F1F2</color>
+    <color name="light_dark_sleep_text">#98A1BD</color>
+    <color name="daily_desc_font_color">#5A6175</color>
+
+
+
+    <!-- Course details colors -->
+    <color name="courseFavourite">#FF84A2</color>
+    <color name="courseListenCount">#7FD2F2</color>
+    <color name="playButtonColor">#F6F1FB</color>
+
 </resources>
