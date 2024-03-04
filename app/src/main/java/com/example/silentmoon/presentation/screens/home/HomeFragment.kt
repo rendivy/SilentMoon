@@ -13,7 +13,16 @@ import com.example.silentmoon.presentation.screens.home.service.HomeService
 class HomeFragment : Fragment(R.layout.home_fragment) {
 
     private lateinit var binding: HomeFragmentBinding
-    private val homeAdapter = HomeAdapter()
+    private val homeAdapter = HomeAdapter(
+        onItemClick = {
+            parentFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragment_container_view,
+                    LightSleepFragment(getString(R.string.focus_attention))
+                )
+                .addToBackStack(null).commit()
+        }
+    )
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -22,7 +31,29 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
         binding.recyclerView.adapter = homeAdapter
         binding.recyclerView.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        setupButton()
         homeAdapter.submitList(HomeService.homeItemList)
+    }
 
+
+    private fun setupButton() {
+        binding.button3.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragment_container_view,
+                    LightSleepFragment(getString(R.string.focus_attention))
+                )
+                .addToBackStack(null).commit()
+        }
+
+
+        binding.button4.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragment_container_view,
+                    LightSleepFragment(getString(R.string.focus_attention))
+                )
+                .addToBackStack(null).commit()
+        }
     }
 }

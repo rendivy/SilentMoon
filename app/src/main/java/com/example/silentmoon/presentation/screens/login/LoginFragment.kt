@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.LoginFragmentBinding
 import com.example.silentmoon.presentation.BottomBarVisibility
+import com.example.silentmoon.presentation.UserNameUpdateListener
 import com.example.silentmoon.presentation.navigation.clearAllBackStack
 import com.example.silentmoon.presentation.screens.registration.RegistrationFragment
 import com.example.silentmoon.presentation.screens.welcome.WelcomeFragment
@@ -54,6 +55,7 @@ class LoginFragment : Fragment(R.layout.login_fragment) {
                     null
                 )
                 .commit()
+            (activity as? UserNameUpdateListener)?.onUserNameUpdate(binding.emailTextField.editText?.text.toString())
 
         }
 

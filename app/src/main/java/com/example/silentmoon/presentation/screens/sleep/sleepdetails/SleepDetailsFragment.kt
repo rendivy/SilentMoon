@@ -1,4 +1,4 @@
-package com.example.silentmoon.presentation
+package com.example.silentmoon.presentation.screens.sleep.sleepdetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.SleepDetailsFragmentBinding
+import com.example.silentmoon.presentation.BottomBarVisibility
+import com.example.silentmoon.presentation.screens.sleep.sleepplayer.SleepPlayerFragment
 import com.example.silentmoon.presentation.screens.sleep.sleepmusic.adapter.SleepMusicCardAdapter
 import com.example.silentmoon.presentation.screens.sleep.sleepmusic.utils.SleepItemService
 
@@ -19,6 +21,16 @@ class SleepDetailsFragment(private val titleImageId: Int, private val titleText:
     private lateinit var binding: SleepDetailsFragmentBinding
     private val viewAdapter: SleepMusicCardAdapter = SleepMusicCardAdapter { imageId, text ->
         navigateToSleepDetailsFragment(imageId, text)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        (activity as? BottomBarVisibility)?.setBottomBarVisibility(false)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        (activity as? BottomBarVisibility)?.setBottomBarVisibility(true)
     }
 
     override fun onCreateView(

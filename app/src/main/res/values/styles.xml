@@ -20,9 +20,10 @@
     </style>
 
 
-
     <style name="MyBottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="android:itemTextAppearance">@style/MyBottomNavTextAppearance</item>
+        <item name="android:background">@color/white</item>
+
     </style>
 
     <style name="MyBottomNavTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
@@ -204,6 +205,20 @@
     <style name="HomeCardDescStyle">
         <item name="android:fontFamily">@font/helvetica_neue_medium</item>
         <item name="android:textSize">11sp</item>
+    </style>
+
+
+    <style name="activeIndicatorShape">
+        <item name="cornerFamily">?attr/shapeCornerFamily</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+
+
+    <style name="bottomBarActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">46dp</item>
+        <item name="android:height">46dp</item>
+        <item name="android:color">@color/purpura_blue</item>
+        <item name="shapeAppearance">@style/activeIndicatorShape</item>
     </style>
 
 

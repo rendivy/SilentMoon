@@ -86,6 +86,7 @@
                 app:startIconContentDescription="123">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEditText"
                     style="@style/PrimaryTextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

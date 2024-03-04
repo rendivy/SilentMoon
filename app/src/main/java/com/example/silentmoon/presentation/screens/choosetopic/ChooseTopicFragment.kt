@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.ChooseTopicFragmentBinding
 import com.example.silentmoon.presentation.BottomBarVisibility
+import com.example.silentmoon.presentation.navigation.clearAllBackStack
 import com.example.silentmoon.presentation.screens.choosetopic.adapter.TopicAdapter
 import com.example.silentmoon.presentation.screens.choosetopic.adapter.TopicService
 import com.example.silentmoon.presentation.screens.choosetopic.util.SpaceItemDecorator
@@ -25,9 +26,9 @@ class ChooseTopicFragment : Fragment(R.layout.choose_topic_fragment) {
     private lateinit var binding: ChooseTopicFragmentBinding
 
     private var viewAdapter: TopicAdapter = TopicAdapter {
+        parentFragmentManager.clearAllBackStack()
         parentFragmentManager.beginTransaction()
             .replace(R.id.fragment_container_view, HomeFragment())
-            .addToBackStack(null)
             .commit()
     }
 

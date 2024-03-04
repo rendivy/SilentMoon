@@ -1,4 +1,4 @@
-package com.example.silentmoon.presentation
+package com.example.silentmoon.presentation.screens.sleep.sleepplayer
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.MusicFragmentBinding
+import com.example.silentmoon.presentation.BottomBarVisibility
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

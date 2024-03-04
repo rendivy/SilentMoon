@@ -121,6 +121,15 @@
     <string name="_3_10_min">3-10 MIN</string>
     <string name="relaxation">Relaxation</string>
     <string name="music">MUSIC</string>
+    <string name="sleep_bottom">Sleep</string>
+    <string name="home_bottom">Home</string>
+    <string name="meditate_bottom">Meditate</string>
+    <string name="music_bottom">Music</string>
+    <string name="yuriy_bottom">Yuriy</string>
+    <string name="you_want_some_music">Time to relax and forget about stress!</string>
+    <string name="listen_music">Listen music!</string>
+    <string name="happiness_card_label">Happiness</string>
+    <string name="hello">Hello</string>
 
 
 </resources>

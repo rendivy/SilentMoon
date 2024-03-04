@@ -1,21 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:title="Home" />
+        android:icon="@drawable/home_icon"
+        android:title="@string/home_bottom" />
 
     <item
         android:id="@+id/navigation_sleep"
-        android:title="Sleep" />
+        android:icon="@drawable/sleep_icon"
+        android:title="@string/sleep_bottom" />
 
     <item
         android:id="@+id/navigation_meditate"
-        android:title="Meditate" />
+        android:icon="@drawable/meditate_icon"
+        android:title="@string/meditate_bottom" />
 
     <item
         android:id="@+id/navigation_music"
-        android:title="Music" />
+        android:icon="@drawable/music_icon"
+        android:title="@string/music_bottom" />
 
     <item
         android:id="@+id/navigation_profile"
-        android:title="Yuriy" />
+        android:icon="@drawable/profile_icon"
+        android:title="@string/yuriy_bottom" />
 </menu>

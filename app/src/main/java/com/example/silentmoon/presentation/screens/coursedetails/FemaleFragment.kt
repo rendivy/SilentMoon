@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.silentmoon.presentation.LightSleepFragment
+import com.example.silentmoon.presentation.screens.home.LightSleepFragment
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.FemaleFragmentBinding
 import com.example.silentmoon.presentation.screens.coursedetails.adapter.SoundListAdapter

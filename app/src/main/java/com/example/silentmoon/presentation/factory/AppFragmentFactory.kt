@@ -2,9 +2,9 @@ package com.example.silentmoon.presentation.factory
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
-import com.example.silentmoon.presentation.LightSleepFragment
-import com.example.silentmoon.presentation.SleepDetailsFragment
-import com.example.silentmoon.presentation.SleepPlayerFragment
+import com.example.silentmoon.presentation.screens.home.LightSleepFragment
+import com.example.silentmoon.presentation.screens.sleep.sleepdetails.SleepDetailsFragment
+import com.example.silentmoon.presentation.screens.sleep.sleepplayer.SleepPlayerFragment
 import com.example.silentmoon.presentation.screens.welcome.WelcomeFragment
 
 class AppFragmentFactory(

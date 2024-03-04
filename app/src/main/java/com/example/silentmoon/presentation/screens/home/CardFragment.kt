@@ -1,4 +1,4 @@
-package com.example.silentmoon.presentation
+package com.example.silentmoon.presentation.screens.home
 
 import android.os.Build
 import android.os.Bundle

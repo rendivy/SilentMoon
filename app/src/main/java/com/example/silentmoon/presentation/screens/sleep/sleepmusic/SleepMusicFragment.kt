@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.SleepMusicFragmentBinding
-import com.example.silentmoon.presentation.SleepDetailsFragment
+import com.example.silentmoon.presentation.screens.sleep.sleepdetails.SleepDetailsFragment
 import com.example.silentmoon.presentation.screens.sleep.sleepmusic.adapter.SleepMusicCardAdapter
 import com.example.silentmoon.presentation.screens.sleep.sleepmusic.utils.SleepItemService
 

@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.RegistartionFragmentBinding
 import com.example.silentmoon.presentation.BottomBarVisibility
+import com.example.silentmoon.presentation.UserNameUpdateListener
 import com.example.silentmoon.presentation.navigation.clearAllBackStack
 import com.example.silentmoon.presentation.screens.welcome.WelcomeFragment
 
@@ -42,6 +43,7 @@ class RegistrationFragment : Fragment(R.layout.registartion_fragment) {
                     WelcomeFragment(binding.nameTextField.editText?.text.toString())
                 )
                 .commit()
+            (activity as? UserNameUpdateListener)?.onUserNameUpdate(binding.nameEditText.text.toString())
         }
 
         return binding.root

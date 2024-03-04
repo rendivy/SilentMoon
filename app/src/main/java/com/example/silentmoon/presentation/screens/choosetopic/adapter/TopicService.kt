@@ -44,6 +44,7 @@ object TopicService {
         TopicItem(
             R.drawable.reduce_stress_icon,
             label = "Reduce Anxiety",
+            textColor = R.color.welcome_label_color,
             backgroundColor = R.color.reduce_anxiety_card_background
         ),
         TopicItem(

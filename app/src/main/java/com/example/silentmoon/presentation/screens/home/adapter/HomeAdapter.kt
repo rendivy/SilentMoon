@@ -9,12 +9,11 @@ import com.example.silentmoon.R
 import com.example.silentmoon.databinding.HomeItemBinding
 import com.example.silentmoon.presentation.screens.home.entity.HomeItem
 
-class HomeAdapter :
+class HomeAdapter(private inline val onItemClick: () -> Unit) :
     ListAdapter<HomeItem, HomeAdapter.HomeViewHolder>(DiffUtilTopicCallback()) {
 
     private companion object {
         class DiffUtilTopicCallback : DiffUtil.ItemCallback<HomeItem>() {
-
             override fun areItemsTheSame(oldItem: HomeItem, newItem: HomeItem): Boolean {
                 return oldItem.backgroundId == newItem.backgroundId
             }
@@ -40,14 +39,18 @@ class HomeAdapter :
     }
 
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
-        with(holder.binding.root) {
+        val item = getItem(position)
+        with(holder.binding) {
+            root.setOnClickListener { onItemClick() }
+            cardImage.setImageResource(item.backgroundId)
+            cardLabel.text = root.context.getString(item.titleId)
             val paddingLeft = if (position == 0) {
-                resources.getDimensionPixelSize(R.dimen.padding0)
+                root.resources.getDimensionPixelSize(R.dimen.padding0)
             } else {
-                resources.getDimensionPixelSize(R.dimen.padding10)
+                root.resources.getDimensionPixelSize(R.dimen.padding10)
             }
-            val paddingRight = resources.getDimensionPixelSize(R.dimen.padding10)
-            setPadding(paddingLeft, paddingTop, paddingRight, paddingBottom)
+            val paddingRight = root.resources.getDimensionPixelSize(R.dimen.padding10)
+            root.setPadding(paddingLeft, root.paddingTop, paddingRight, root.paddingBottom)
         }
     }
 

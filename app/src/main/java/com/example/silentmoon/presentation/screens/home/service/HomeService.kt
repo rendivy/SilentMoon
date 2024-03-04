@@ -1,33 +1,34 @@
 package com.example.silentmoon.presentation.screens.home.service
 
+import com.example.silentmoon.R
 import com.example.silentmoon.presentation.screens.home.entity.HomeItem
 
 object HomeService {
 
     val homeItemList = listOf(
         HomeItem(
-            backgroundId = 1,
-            titleId = 1
+            backgroundId = R.drawable.focus_background_card,
+            titleId = R.string.focus_card_label
         ),
         HomeItem(
-            backgroundId = 2,
-            titleId = 2
+            backgroundId = R.drawable.happiness_home_item,
+            titleId = R.string.happiness_card_label
         ),
         HomeItem(
-            backgroundId = 3,
-            titleId = 3
+            backgroundId = R.drawable.focus_background_card,
+            titleId = R.string.focus_card_label
         ),
         HomeItem(
-            backgroundId = 4,
-            titleId = 4
+            backgroundId = R.drawable.happiness_home_item,
+            titleId = R.string.happiness_card_label
         ),
         HomeItem(
-            backgroundId = 5,
-            titleId = 5
+            backgroundId = R.drawable.focus_background_card,
+            titleId = R.string.focus_card_label
         ),
         HomeItem(
-            backgroundId = 6,
-            titleId = 6
+            backgroundId = R.drawable.happiness_home_item,
+            titleId = R.string.happiness_card_label
         ),
     )
 }
