@@ -20,6 +20,17 @@
     </style>
 
 
+
+    <style name="MyBottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:itemTextAppearance">@style/MyBottomNavTextAppearance</item>
+    </style>
+
+    <style name="MyBottomNavTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
     <style name="OceanMoonButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/oceanButtonHeight</item>
@@ -143,6 +154,56 @@
     <style name="RobotoMediumTextStyle" parent="PrimaryTextStyle">
         <item name="android:fontFamily">@font/roboto_medium</item>
         <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="RoundedCornersImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="HomeItemLabelStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HomeItemDescStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">#98A1BD</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="MeditationItemDescStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textColor">@color/meditationAccentFont</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HomeCardButtonStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/paddingMedium</item>
+        <item name="android:paddingRight">@dimen/paddingMedium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HomeCardDurationStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textColor">@color/light_gray_stroke</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="CardLabelStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HomeCardDescStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textSize">11sp</item>
     </style>
 
 

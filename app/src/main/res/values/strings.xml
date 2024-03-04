@@ -65,6 +65,7 @@
     <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
     <string name="the_ocean_moon_label">The Ocean Moon</string>
     <string name="sleep_card_description">45 MIN • SLEEP MUSIC</string>
+    <string name="home_card_desc">MEDITATION • 3-10 MIN</string>
     <string name="daily_card_description">APR 30 • PAUSE PRACTICE</string>
     <string name="sleep_details_label">Night Island</string>
     <string name="sleep_details_desc">Ease the mind into a restful night’s sleep with\nthese deep, ambient tones.</string>
@@ -106,6 +107,20 @@
     <string name="loving_kindness_duration">7 MIN</string>
     <string name="pick_narrator">Pick a Narrator</string>
     <string name="light_sleep_desc">7 DAYS OF CALM</string>
+
+
+
+    <!-- Strings used for the home fragment -->
+    <string name="home_label">Good Morning, Yuriy</string>
+    <string name="home_description">We wish you have a good day</string>
+    <string name="focus_card_label">Focus</string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="basic_course">Basics</string>
+    <string name="course">COURSE</string>
+    <string name="start">START</string>
+    <string name="_3_10_min">3-10 MIN</string>
+    <string name="relaxation">Relaxation</string>
+    <string name="music">MUSIC</string>
 
 
 </resources>

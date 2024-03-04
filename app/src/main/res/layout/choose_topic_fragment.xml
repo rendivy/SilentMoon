@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/choose_topic_background"
-    tools:context=".screens.choosetopic.ChooseTopicFragment">
+    tools:context=".presentation.screens.choosetopic.ChooseTopicFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

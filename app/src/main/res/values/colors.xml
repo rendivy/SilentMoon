@@ -22,6 +22,7 @@
     <color name="purpura_blue_alpha60">#608E97FD</color>
     <color name="light_gray_alpha60">#60A1A4B2</color>
     <color name="yellow_card_background">#FFCF86</color>
+    <color name="home_yellow_card">#FFDB9D</color>
     <color name="ocean_moon_font_color">#FFE7BF</color>
     <color name="orange_light_card_background">#FEB18F</color>
     <color name="orange_card_background">#FA6E5A</color>
@@ -51,5 +52,10 @@
     <color name="courseFavourite">#FF84A2</color>
     <color name="courseListenCount">#7FD2F2</color>
     <color name="playButtonColor">#F6F1FB</color>
+
+
+
+    <!-- Home fragment colors -->
+    <color name="courseCardDesc">#F7E8D0</color>
 
 </resources>
