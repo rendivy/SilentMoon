@@ -24,7 +24,6 @@ class MeditationAdapter(private inline val onItemClick: () -> Unit) :
         const val MAXIMUM_CARD_HEIGHT = 220F
         const val MINIMUM_CARD_HEIGHT = 167F
         const val MAXIMUM_CARD_WIDTH = 177F
-        const val MINIMUM_CARD_WIDTH = 167F
 
         class DiffUtilTopicCallback : DiffUtil.ItemCallback<MeditationItem>() {
 

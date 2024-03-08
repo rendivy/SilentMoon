@@ -221,5 +221,12 @@
         <item name="shapeAppearance">@style/activeIndicatorShape</item>
     </style>
 
+    <style name="OnLightBackgroundFontStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 
 </resources>

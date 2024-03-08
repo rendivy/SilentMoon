@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.HomeFragmentBinding
+import com.example.silentmoon.presentation.screens.coursedetails.CourseDetailsFragment
 import com.example.silentmoon.presentation.screens.home.adapter.HomeAdapter
 import com.example.silentmoon.presentation.screens.home.service.HomeService
 
@@ -18,7 +19,7 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
             parentFragmentManager.beginTransaction()
                 .replace(
                     R.id.fragment_container_view,
-                    LightSleepFragment(getString(R.string.focus_attention))
+                    CourseDetailsFragment()
                 )
                 .addToBackStack(null).commit()
         }
