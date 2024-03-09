@@ -34,7 +34,7 @@
     <string name="login_email_label">OR LOG IN WITH EMAIL</string>
 
 
-    <!-- Toast messages -->
+    <!-- Strings used for the second registration section -->
     <string name="forgot_password_toast">That very bad!</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -45,7 +45,8 @@
     <string name="hi_yuriy_welcome_to_silent_moon">Hi Yuriy, Welcome to Silent Moon</string>
     <string name="silent_moon_span">to Silent Moon</string>
     <string name="explore_the_app_find_some_peace_of_mind_to_prepare_for_meditation">Explore the app, Find some peace of mind to prepare for meditation.</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Strings used for onboarding fragment -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="reduce_anxiety">Reduce anxiety</string>
     <string name="what_brings_you_to_silent_moon">What Brings you\nto Silent Moon?</string>
@@ -130,6 +131,8 @@
     <string name="listen_music">Listen music!</string>
     <string name="happiness_card_label">Happiness</string>
     <string name="hello">Hello</string>
+
+    <!-- Strings used for the time fragment -->
     <string name="meditate_time">What time would you\nlike to meditate?</string>
     <string name="timepicker_desc">Any time you can choose but We\nrecommend first thing in th morning.</string>
     <string name="meditate_day">Which day would you\nlike to meditate?</string>
@@ -143,6 +146,11 @@
     <string name="saturday_chip_label">S</string>
     <string name="no_thanks_text">NO THANKS</string>
     <string name="daily_thought_label">Daily Thought</string>
+
+    <!-- Strings used for the registartion fragment -->
+    <string name="private_policy">I HAVE READ THE PRIVATE POLICY</string>
+    <string name="spannable_policy">PRIVATE POLICY</string>
+    <string name="policy_toast">Тут будет политика конфиденциальности</string>
 
 
 </resources>

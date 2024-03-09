@@ -30,8 +30,8 @@
             style="@style/BackButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingSmall"
             android:src="@drawable/back_button_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

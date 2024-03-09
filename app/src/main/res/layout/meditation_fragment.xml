@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@color/white">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,7 +32,7 @@
 
         <TextView
             android:id="@+id/sleepDesc"
-            style="@style/RobotoNormal"
+            style="@style/RobotoNormalSecondary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/padding24"
@@ -40,8 +40,6 @@
             android:layout_marginEnd="@dimen/padding24"
             android:gravity="center"
             android:text="@string/meditate_desc"
-            android:textColor="#A0A3B1"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sleepTitle">
@@ -64,8 +62,8 @@
             android:id="@+id/meditationRecycleView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding24"
             android:useDefaultMargins="true"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -78,10 +76,10 @@
             android:id="@+id/imageView6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:layout_marginEnd="@dimen/padding24"
             android:scaleType="fitXY"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
             android:src="@drawable/daily_calm_card_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,8 +90,8 @@
             style="@style/PrimaryTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="@dimen/paddingLarge"
+            android:layout_marginTop="@dimen/padding24"
             android:text="@string/daily_calm_label"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
@@ -104,21 +102,17 @@
             style="@style/DailyDescFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/paddingLarge"
+            android:layout_marginTop="@dimen/paddingSmall"
             android:text="@string/daily_card_description"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <ImageView
             android:id="@+id/playMusicButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:background="@drawable/dark_button_background"
-            android:backgroundTint="@color/sleepAccent"
-            android:padding="14dp"
+            style="@style/MeditationMusicButtonStyle"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:layout_marginEnd="@dimen/paddingLarge"
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="@+id/imageView6"
             app:srcCompat="@drawable/play_music_icon"

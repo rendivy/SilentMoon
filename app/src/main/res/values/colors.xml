@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Common colors -->
     <color name="black">#FF000000</color>
     <color name="blue">#8E97FD</color>
     <color name="gray">#FF9E9E9E</color>
     <color name="white">#FFFFFFFF</color>
     <color name="violets_are_blue">#FF7583CA</color>
     <color name="transparent">#00000000</color>
+
+    <!-- Light Screens colors (Meditation, Profile, Home, CourseDetails) -->
     <color name="light_gray">#A1A4B2</color>
     <color name="light_gray_stroke">#EBEAEC</color>
     <color name="light_gray_background">#BABCC6</color>
@@ -20,6 +24,8 @@
     <color name="gray_overlay_50">#3F414E</color>
     <color name="purpura_blue">#8E97FD</color>
     <color name="purpura_blue_alpha60">#608E97FD</color>
+
+    <!-- Choose Topic colors -->
     <color name="light_gray_alpha60">#60A1A4B2</color>
     <color name="yellow_card_background">#FFCF86</color>
     <color name="home_yellow_card">#FFDB9D</color>
@@ -52,7 +58,6 @@
     <color name="courseFavourite">#FF84A2</color>
     <color name="courseListenCount">#7FD2F2</color>
     <color name="playButtonColor">#F6F1FB</color>
-
 
 
     <!-- Home fragment colors -->

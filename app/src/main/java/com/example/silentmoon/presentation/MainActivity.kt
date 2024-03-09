@@ -16,6 +16,7 @@ import com.example.silentmoon.presentation.factory.AppFragmentFactory
 import com.example.silentmoon.presentation.screens.home.HomeFragment
 import com.example.silentmoon.presentation.screens.home.LightSleepFragment
 import com.example.silentmoon.presentation.screens.meditation.MeditationFragment
+import com.example.silentmoon.presentation.screens.onboarding.OnBoardingFragment
 import com.example.silentmoon.presentation.screens.profile.ProfileFragment
 import com.example.silentmoon.presentation.screens.sleep.SleepFragment
 import com.example.silentmoon.presentation.screens.sleep.sleepdetails.SleepDetailsFragment
@@ -141,7 +142,7 @@ class MainActivity : AppCompatActivity(), BottomBarVisibility, UserNameUpdateLis
 
         private fun setupInitialFragment() {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container_view, HomeFragment())
+                .add(R.id.fragment_container_view, OnBoardingFragment())
                 .commit()
         }
 
