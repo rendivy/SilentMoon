@@ -17,6 +17,8 @@ import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.TimepickerFragmentBinding
+import com.example.silentmoon.presentation.navigation.clearAllBackStack
+import com.example.silentmoon.presentation.screens.home.HomeFragment
 import com.ozcanalasalvar.datepicker.view.timepicker.TimePicker
 
 class TimePickerFragment : Fragment(R.layout.test) {
@@ -41,6 +43,18 @@ class TimePickerFragment : Fragment(R.layout.test) {
         savedInstanceState: Bundle?
     ): View {
         binding = TimepickerFragmentBinding.inflate(inflater, container, false)
+        binding.singUpButton.setOnClickListener {
+            parentFragmentManager.clearAllBackStack()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container_view, HomeFragment())
+                .commit()
+        }
+        binding.noThanksTextView.setOnClickListener {
+            parentFragmentManager.clearAllBackStack()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container_view, HomeFragment())
+                .commit()
+        }
         return binding.root
     }
 }
@@ -54,7 +68,11 @@ class CustomTimePicker(context: Context, attrs: AttributeSet) : LinearLayout(con
     private val amPmPicker: NumberPicker
 
 
-    override fun addViewInLayout(child: View?, index: Int, params: ViewGroup.LayoutParams?): Boolean {
+    override fun addViewInLayout(
+        child: View?,
+        index: Int,
+        params: ViewGroup.LayoutParams?
+    ): Boolean {
         val result = super.addViewInLayout(child, index, params)
         if (child is EditText) {
             child.textSize = 24f
@@ -100,7 +118,6 @@ class CustomTimePicker(context: Context, attrs: AttributeSet) : LinearLayout(con
 
 
 }
-
 
 
 @RequiresApi(Build.VERSION_CODES.Q)

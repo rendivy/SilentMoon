@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.silentmoon.R
 import com.example.silentmoon.databinding.MeditationFragmentBinding
+import com.example.silentmoon.presentation.screens.coursedetails.CourseDetailsFragment
 import com.example.silentmoon.presentation.screens.meditation.adapter.MeditationAdapter
 import com.example.silentmoon.presentation.screens.meditation.util.MeditationService
 import com.example.silentmoon.presentation.screens.sleep.sleepmusic.adapter.CategoryAdapter
@@ -16,7 +17,17 @@ import com.example.silentmoon.presentation.screens.sleep.sleepmusic.utils.SleepI
 class MeditationFragment : Fragment(R.layout.meditation_fragment) {
 
     private lateinit var binding: MeditationFragmentBinding
-    private val meditationAdapter = MeditationAdapter {}
+    private val meditationAdapter = MeditationAdapter {
+
+        parentFragmentManager.beginTransaction()
+            .replace(
+                R.id.fragment_container_view,
+                CourseDetailsFragment()
+            )
+            .addToBackStack(null)
+            .commit()
+
+    }
     private val categoriesAdapter = CategoryAdapter(R.drawable.unselected_meditation_category)
 
     private companion object {
@@ -29,16 +40,26 @@ class MeditationFragment : Fragment(R.layout.meditation_fragment) {
 
         binding = MeditationFragmentBinding.bind(view)
 
+        binding.playMusicButton.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(
+                    R.id.fragment_container_view,
+                    CourseDetailsFragment()
+                )
+                .addToBackStack(null).commit()
+
+        }
+
         binding.meditationRecycleView.apply {
             adapter = meditationAdapter
             layoutManager = StaggeredGridLayoutManager(SPAN_COUNT, LinearLayoutManager.VERTICAL)
             setHasFixedSize(true)
         }
+
         binding.categoriesRecyclerView.adapter = categoriesAdapter
         categoriesAdapter.submitList(SleepItemService.categoryList)
 
         meditationAdapter.submitList(MeditationService.meditationItems)
     }
-
 
 }

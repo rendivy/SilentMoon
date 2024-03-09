@@ -19,7 +19,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 
-class LightSleepFragment(private val label: String ) : Fragment(R.layout.light_sleep_fragment),
+class LightSleepFragment(private val label: String = "Light Sleep") :
+    Fragment(R.layout.light_sleep_fragment),
     CoroutineScope by MainScope() {
 
 
@@ -28,7 +29,7 @@ class LightSleepFragment(private val label: String ) : Fragment(R.layout.light_s
     private var isMusicPlaying = false
 
     private val job: Job = Job()
-    private val uiScope = CoroutineScope(Dispatchers.Main)
+    private val uiScope = CoroutineScope(Dispatchers.Default)
 
     private companion object {
         const val MUSIC_LENGTH = 2700f
@@ -78,15 +79,12 @@ class LightSleepFragment(private val label: String ) : Fragment(R.layout.light_s
             }
             binding.buttonBackground.setImageResource(playPauseIcon)
         }
-
-
         setupSlider()
         setupBackButton()
         setupFavouriteButton()
         setupDownloadButton()
         setupBackMusicButton()
         setupForwardMusicButton()
-
         return binding.root
     }
 

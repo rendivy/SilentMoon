@@ -18,4 +18,10 @@
     <dimen name="playButtonSize">40dp</dimen>
 
 
+    <!-- Font size -->
+    <dimen name="fontMedium">16sp</dimen>
+    <dimen name="fonSemiMedium">14sp</dimen>
+    <dimen name="font24">24sp</dimen>
+
+
 </resources>
