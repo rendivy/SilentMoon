@@ -32,6 +32,7 @@ about layout using View.
      <img src="SilentScreenshot/7.png" width=300>
      <img src="SilentScreenshot/8.png" width=300>
 <img src="SilentScreenshot/9.png" width=300>
+<img src="SilentScreenshot/14.png" width=300>
 </p>
 
 
