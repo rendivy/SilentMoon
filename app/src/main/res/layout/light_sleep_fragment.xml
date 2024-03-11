@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/light_music_background"
-    tools:context=".SleepPlayerFragment">
+    tools:context=".presentation.screens.sleep.sleepplayer.SleepPlayerFragment">
 
 
     <ImageButton
@@ -64,7 +64,7 @@
         style="@style/SleepDescTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/paddingMedium"
         android:text="@string/light_sleep_desc"
         android:textColor="@color/light_gray"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,12 +76,6 @@
         android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/paddingLarge"
-        android:layout_marginEnd="@dimen/paddingLarge"
-        android:layout_marginBottom="32dp"
-        android:value="0"
-        android:valueFrom="0.0"
-        android:valueTo="45"
         app:haloColor="@color/light_gray_alpha60"
         app:haloRadius="13dp"
         app:labelBehavior="gone"
@@ -94,7 +88,8 @@
         app:thumbRadius="7dp"
         app:tickVisible="false"
         app:trackColorActive="@color/light_dark"
-        app:trackColorInactive="@color/light_gray">
+        app:trackColorInactive="@color/light_gray"
+        style="@style/SliderLightStyle">
 
     </com.google.android.material.slider.Slider>
 
@@ -160,8 +155,8 @@
 
             <ImageView
                 android:id="@+id/buttonBackground"
-                android:layout_width="87dp"
-                android:layout_height="87dp"
+                android:layout_width="@dimen/buttonBackgroundSound"
+                android:layout_height="@dimen/buttonBackgroundSound"
                 android:layout_gravity="center"
                 android:background="@drawable/pause_icon_background"
                 android:backgroundTint="@color/light_dark"

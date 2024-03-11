@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <inset android:drawable="?android:attr/listChoiceIndicatorSingle" android:insetBottom="20dp" />
+    </item>
+</selector>

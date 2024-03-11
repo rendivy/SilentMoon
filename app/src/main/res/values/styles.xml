@@ -20,6 +20,56 @@
     </style>
 
 
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/light_gray</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/purpura_blue</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">@color/white</item> <!-- checkbox text color -->
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="WeekdayChipStyle">
+        <item name="android:checkable">true</item>
+        <item name="chipCornerRadius">50dp</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">@color/transparent</item>
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="chipStrokeColor">@color/light_gray</item>
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="android:layout_width">41dp</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <style name="ChipStyle">
+        <item name="android:background">@drawable/back_button_background</item>
+        <item name="android:paddingStart">@dimen/paddingMedium</item>
+        <item name="android:paddingEnd">@dimen/paddingMedium</item>
+        <item name="android:paddingTop">@dimen/paddingSmall</item>
+        <item name="android:paddingBottom">@dimen/paddingSmall</item>
+    </style>
+
+
+    <style name="MyBottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:itemTextAppearance">@style/MyBottomNavTextAppearance</item>
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+    <style name="MyBottomNavTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
     <style name="OceanMoonButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/oceanButtonHeight</item>
@@ -62,6 +112,64 @@
         <item name="colorOnSurface">@color/purpura_blue</item>
     </style>
 
+
+    <style name="BackButtonStyle">
+        <item name="android:background">@drawable/back_button_background</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
+    </style>
+
+
+    <style name="AdditionalButtonStyle">
+        <item name="android:background">@drawable/addittional_button_background</item>
+        <item name="android:padding">@dimen/paddingMedium</item>
+    </style>
+
+
+    <style name="MeditationItemDescStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textColor">@color/meditationAccentFont</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HomeCardButtonStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/paddingMedium</item>
+        <item name="android:paddingRight">@dimen/paddingMedium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HomeCardDurationStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textColor">@color/light_gray_stroke</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="CardLabelStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HomeCardDescStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_medium</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+    <style name="activeIndicatorShape">
+        <item name="cornerFamily">?attr/shapeCornerFamily</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+
+
+    <style name="bottomBarActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">46dp</item>
+        <item name="android:height">46dp</item>
+        <item name="android:color">@color/purpura_blue</item>
+        <item name="shapeAppearance">@style/activeIndicatorShape</item>
+    </style>
 
     <!-- Styles for text  -->
     <style name="PrimaryTextStyle">
@@ -129,19 +237,104 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="BackButtonStyle">
-        <item name="android:background">@drawable/back_button_background</item>
-        <item name="android:padding">@dimen/paddingMedium</item>
-    </style>
 
-
-    <style name="AdditionalButtonStyle">
-        <item name="android:background">@drawable/addittional_button_background</item>
-        <item name="android:padding">@dimen/paddingMedium</item>
-    </style>
 
     <style name="RobotoMediumTextStyle" parent="PrimaryTextStyle">
         <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="RoundedCornersImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="HomeItemLabelStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HomeItemDescStyle">
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">#98A1BD</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+
+    <style name="OnLightBackgroundFontStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ChooseTopicTextStyle">
+        <item name="android:fontFamily">@font/helvetica_neue_bold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:padding">@dimen/paddingSmall</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PlayMusicButtonStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/dark_button_background</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+    <style name="SliderLightStyle">
+        <item name="android:layout_marginStart">@dimen/paddingLarge</item>
+        <item name="android:layout_marginEnd">@dimen/paddingLarge</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:value">0</item>
+        <item name="android:valueFrom">0.0</item>
+        <item name="android:valueTo">45</item>
+    </style>
+
+    <style name="RobotoNormalSecondary" parent="RobotoNormal">
+        <item name="android:textColor">#A0A3B1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MeditationMusicButtonStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/dark_button_background</item>
+        <item name="android:backgroundTint">@color/sleepAccent</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+    <style name="GaramondPremierProTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:fontFamily">@font/garamond_premier_pro</item>
+        <item name="android:shadowColor">@color/ocean_moon_font_color</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:textColor">@color/ocean_moon_font_color</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="OnBoardingPrimaryTextStyle">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#3F414E</item>
+        <item name="android:textFontWeight">900</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="SilentMoonTextStyle">
+        <item name="android:fontFamily">@font/airbnb_cereal_bold</item>
+        <item name="android:letterSpacing">0.24</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:textFontWeight">400</item>
         <item name="android:textSize">16sp</item>
     </style>
 
