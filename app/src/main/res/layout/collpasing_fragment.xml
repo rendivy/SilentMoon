@@ -1,8 +1,8 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/sleepAccent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/sleepAccent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout"
@@ -19,8 +19,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                app:layout_collapseMode="parallax"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
 
                 <ImageView
                     android:id="@+id/header_image"
@@ -42,7 +42,6 @@
 
                 </Button>
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -109,28 +108,28 @@
                 style="@style/SleepDescTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="@dimen/paddingLarge"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:drawablePadding="8dp"
+                android:drawablePadding="@dimen/paddingSmall"
+                android:gravity="center"
+                android:paddingStart="@dimen/paddingSmall"
+                android:paddingEnd="@dimen/paddingSmall"
                 android:text="@string/favourites_count"
-                app:layout_constraintStart_toStartOf="parent"
                 app:drawableStartCompat="@drawable/favourite_details_icon"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sleepDetailsDesc" />
 
 
             <TextView
                 android:id="@+id/listenCount"
                 style="@style/SleepDescTextStyle"
-                android:text="@string/listen_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/paddingLarge"
+                android:drawablePadding="@dimen/paddingSmall"
                 android:gravity="center"
-                android:drawablePadding="8dp"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
+                android:paddingStart="@dimen/paddingSmall"
+                android:paddingEnd="@dimen/paddingSmall"
+                android:text="@string/listen_count"
                 app:drawableStartCompat="@drawable/headpones_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/favouritesCount"
@@ -142,7 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
 
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="@dimen/paddingLarge"
                 app:dividerColor="@color/gray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -153,7 +152,7 @@
                 style="@style/SleepDescTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="@dimen/paddingLarge"
                 android:text="@string/related_label"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -164,8 +163,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginTop="@dimen/padding24"
+                android:layout_marginBottom="@dimen/padding24"
                 app:layout_constraintBottom_toTopOf="@+id/playButton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -177,8 +176,8 @@
                 style="@style/PrimaryButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
+                android:layout_marginStart="@dimen/padding24"
+                android:layout_marginEnd="@dimen/padding24"
                 android:text="@string/play_label"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

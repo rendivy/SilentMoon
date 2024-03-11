@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/welcome_sleep_background"
-    tools:context=".screens.sleep.welcome.WelcomeSleepFragment">
+    tools:context=".presentation.screens.sleep.welcome.WelcomeSleepFragment">
 
 
     <ImageView
@@ -13,15 +13,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/welcome_to_sleep_logo"
-        app:layout_constraintBottom_toTopOf="@+id/singUpButton"
+        app:layout_constraintBottom_toTopOf="@+id/getStartedButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
 
     <Button
-        android:id="@+id/singUpButton"
+        android:id="@+id/getStartedButton"
         style="@style/PrimaryButtonStyle"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
@@ -30,6 +28,7 @@
         android:text="@string/get_started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
     </Button>

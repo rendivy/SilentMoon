@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.silentmoon.presentation.CustomNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.silentmoon.presentation.CustomTimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="212dp"
+            android:layout_marginStart="@dimen/padding20"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:layout_marginEnd="@dimen/padding20"
+            android:background="@drawable/time_picker_background"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeTextDesc">
+
+        </com.example.silentmoon.presentation.CustomTimePicker>
+
+
+        <TextView
+            android:id="@+id/timeTextLabel"
+            style="@style/PrimaryTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding24"
+            android:text="@string/meditate_time"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/timeTextDesc"
+            style="@style/OnLightBackgroundFontStyle"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding24"
+            android:text="@string/timepicker_desc"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/fontMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeTextLabel" />
+
+        <TextView
+            android:id="@+id/dayTextLabel"
+            style="@style/PrimaryTextStyle"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:layout_marginEnd="@dimen/padding24"
+            android:text="@string/meditate_day"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/font24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+        <TextView
+            android:id="@+id/dayTextDesc"
+            style="@style/OnLightBackgroundFontStyle"
+            android:layout_width="@dimen/padding0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding24"
+            android:text="@string/day_desc"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextLabel" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/padding20"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/sunday_chip_label"
+            app:layout_constraintEnd_toStartOf="@+id/chip3"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/paddingSmall"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/monday_chip_label"
+            app:layout_constraintEnd_toStartOf="@+id/chip4"
+            app:layout_constraintStart_toEndOf="@+id/chip2"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/paddingSmall"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/thursday_chip_label"
+            app:layout_constraintEnd_toStartOf="@+id/chip5"
+            app:layout_constraintStart_toEndOf="@+id/chip3"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/paddingSmall"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/wednesday_chip_label"
+            app:layout_constraintEnd_toStartOf="@+id/chip6"
+            app:layout_constraintStart_toEndOf="@+id/chip4"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/paddingSmall"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/tuesday_chip_label"
+            app:layout_constraintEnd_toStartOf="@+id/chip7"
+            app:layout_constraintStart_toEndOf="@+id/chip5"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/paddingSmall"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/friday_chip_label"
+            app:layout_constraintEnd_toStartOf="@+id/chip8"
+            app:layout_constraintStart_toEndOf="@+id/chip6"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            style="@style/WeekdayChipStyle"
+            android:layout_marginStart="@dimen/paddingSmall"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding20"
+            android:text="@string/saturday_chip_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chip7"
+            app:layout_constraintTop_toBottomOf="@+id/dayTextDesc" />
+
+        <Button
+            android:id="@+id/singUpButton"
+            style="@style/PrimaryButtonStyle"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/get_started"
+            app:layout_constraintBottom_toTopOf="@+id/noThanksTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/singUpButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chip5" />
+
+        <TextView
+            android:id="@+id/noThanksTextView"
+            style="@style/RobotoNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/no_thanks_text"
+            android:textSize="@dimen/fonSemiMedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.example.silentmoon.presentation.CustomNestedScrollView>

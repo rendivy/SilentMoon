@@ -15,7 +15,16 @@
     <!-- Size for ui element (button height, icon size, ...)-->
     <dimen name="accentButtonHeight">63dp</dimen>
     <dimen name="oceanButtonHeight">35dp</dimen>
+    <dimen name="parallaxImageSize">290dp</dimen>
+    <dimen name="homeCardSize">210dp</dimen>
+    <dimen name="buttonBackgroundSound">87dp</dimen>
     <dimen name="playButtonSize">40dp</dimen>
+
+
+    <!-- Font size -->
+    <dimen name="fontMedium">16sp</dimen>
+    <dimen name="fonSemiMedium">14sp</dimen>
+    <dimen name="font24">24sp</dimen>
 
 
 </resources>
