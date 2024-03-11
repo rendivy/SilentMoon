@@ -34,7 +34,7 @@
     <string name="login_email_label">OR LOG IN WITH EMAIL</string>
 
 
-    <!-- Toast messages -->
+    <!-- Strings used for the second registration section -->
     <string name="forgot_password_toast">That very bad!</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -45,7 +45,8 @@
     <string name="hi_yuriy_welcome_to_silent_moon">Hi Yuriy, Welcome to Silent Moon</string>
     <string name="silent_moon_span">to Silent Moon</string>
     <string name="explore_the_app_find_some_peace_of_mind_to_prepare_for_meditation">Explore the app, Find some peace of mind to prepare for meditation.</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Strings used for onboarding fragment -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="reduce_anxiety">Reduce anxiety</string>
     <string name="what_brings_you_to_silent_moon">What Brings you\nto Silent Moon?</string>
@@ -65,6 +66,7 @@
     <string name="ocean_moon_desc">Non-stop 8-hour mixes of our\nmost popular sleep audio</string>
     <string name="the_ocean_moon_label">The Ocean Moon</string>
     <string name="sleep_card_description">45 MIN • SLEEP MUSIC</string>
+    <string name="home_card_desc">MEDITATION • 3-10 MIN</string>
     <string name="daily_card_description">APR 30 • PAUSE PRACTICE</string>
     <string name="sleep_details_label">Night Island</string>
     <string name="sleep_details_desc">Ease the mind into a restful night’s sleep with\nthese deep, ambient tones.</string>
@@ -106,6 +108,49 @@
     <string name="loving_kindness_duration">7 MIN</string>
     <string name="pick_narrator">Pick a Narrator</string>
     <string name="light_sleep_desc">7 DAYS OF CALM</string>
+
+
+
+    <!-- Strings used for the home fragment -->
+    <string name="home_label">Good Morning, Yuriy</string>
+    <string name="home_description">We wish you have a good day</string>
+    <string name="focus_card_label">Focus</string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="basic_course">Basics</string>
+    <string name="course">COURSE</string>
+    <string name="start">START</string>
+    <string name="_3_10_min">3-10 MIN</string>
+    <string name="relaxation">Relaxation</string>
+    <string name="music">MUSIC</string>
+    <string name="sleep_bottom">Sleep</string>
+    <string name="home_bottom">Home</string>
+    <string name="meditate_bottom">Meditate</string>
+    <string name="music_bottom">Music</string>
+    <string name="yuriy_bottom">Yuriy</string>
+    <string name="you_want_some_music">Time to relax and forget about stress!</string>
+    <string name="listen_music">Listen music!</string>
+    <string name="happiness_card_label">Happiness</string>
+    <string name="hello">Hello</string>
+
+    <!-- Strings used for the time fragment -->
+    <string name="meditate_time">What time would you\nlike to meditate?</string>
+    <string name="timepicker_desc">Any time you can choose but We\nrecommend first thing in th morning.</string>
+    <string name="meditate_day">Which day would you\nlike to meditate?</string>
+    <string name="day_desc">Everyday is best, but we recommend picking at least five.</string>
+    <string name="sunday_chip_label">SU</string>
+    <string name="monday_chip_label">M</string>
+    <string name="thursday_chip_label">T</string>
+    <string name="wednesday_chip_label">W</string>
+    <string name="tuesday_chip_label">TH</string>
+    <string name="friday_chip_label">F</string>
+    <string name="saturday_chip_label">S</string>
+    <string name="no_thanks_text">NO THANKS</string>
+    <string name="daily_thought_label">Daily Thought</string>
+
+    <!-- Strings used for the registartion fragment -->
+    <string name="private_policy">I HAVE READ THE PRIVATE POLICY</string>
+    <string name="spannable_policy">PRIVATE POLICY</string>
+    <string name="policy_toast">Тут будет политика конфиденциальности</string>
 
 
 </resources>

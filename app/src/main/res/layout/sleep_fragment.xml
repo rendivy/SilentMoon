@@ -91,7 +91,7 @@
             android:id="@+id/oceanMoonStartButton"
             style="@style/OceanMoonButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/padding20"
             android:text="@string/ocean_moon_button_label"
             app:layout_constraintBottom_toBottomOf="@+id/oceanMoonImageView"
             app:layout_constraintEnd_toEndOf="@+id/oceanMoonImageView"
@@ -103,7 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="@dimen/padding24"
             android:text="@string/ocean_moon_desc"
             android:textColor="@color/ocean_moon_text_color"
             android:fontFamily="@font/helvetica_neue_light"
@@ -113,20 +113,11 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/garamond_premier_pro"
-            android:shadowColor="@color/ocean_moon_font_color"
-            android:shadowDx="2"
-            android:shadowDy="3"
-            android:shadowRadius="5"
             android:text="@string/the_ocean_moon_label"
-            android:textColor="@color/ocean_moon_font_color"
-            android:textSize="36sp"
             app:layout_constraintBottom_toTopOf="@+id/oceanMoonDesc"
             app:layout_constraintEnd_toEndOf="@+id/oceanMoonImageView"
-            app:layout_constraintStart_toStartOf="@+id/oceanMoonImageView" />
+            app:layout_constraintStart_toStartOf="@+id/oceanMoonImageView"
+            style="@style/GaramondPremierProTextStyle" />
 
         <ImageView
             android:id="@+id/imageView5"

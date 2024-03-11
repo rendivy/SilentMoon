@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.screens.home.HomeFragment">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/padding24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/airbnb_cereal_bold"
+                android:gravity="center"
+                android:letterSpacing="0.24"
+                android:lineSpacingExtra="1.8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/silent"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/logo_for_greetings_screen"
+                android:src="@drawable/silent_moon_logo" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/airbnb_cereal_bold"
+                android:letterSpacing="0.24"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="@string/moon"
+                android:textFontWeight="400"
+                android:textSize="16sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/homeLabel"
+            style="@style/PrimaryTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:text="@string/home_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <TextView
+            android:id="@+id/homeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingSmall"
+            android:text="@string/home_description"
+            android:textColor="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeLabel" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/homeCardSize"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:layout_marginEnd="12dp"
+            app:cardBackgroundColor="@color/purpura_blue"
+            app:cardCornerRadius="@dimen/paddingSmall"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeDescription"
+            app:strokeColor="@color/purpura_blue">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/paddingSmall"
+                android:paddingEnd="@dimen/paddingSmall">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView10"
+                    style="@style/RoundedCornersImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/basic_course_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/basicCardLabel"
+                    style="@style/CardLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:text="@string/basic_course"
+                    android:textColor="@color/welcome_label_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="@style/HomeCardDescStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:layout_marginTop="@dimen/paddingSmall"
+                    android:text="@string/course"
+                    android:textColor="@color/courseCardDesc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/basicCardLabel" />
+
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/HomeCardButtonStyle"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/start"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/home_card_duration"
+                    style="@style/HomeCardDurationStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:layout_marginEnd="@dimen/paddingSmall"
+                    android:text="@string/_3_10_min"
+                    app:layout_constraintBottom_toBottomOf="@+id/button3"
+                    app:layout_constraintEnd_toStartOf="@+id/button3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/button3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/homeCardSize"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="@dimen/paddingLarge"
+
+            android:layout_marginEnd="@dimen/padding24"
+            app:cardBackgroundColor="@color/yellow_card_background"
+            app:cardCornerRadius="@dimen/paddingSmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/space2"
+            app:layout_constraintTop_toBottomOf="@+id/homeDescription"
+            app:strokeColor="@color/yellow_card_background">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/paddingSmall"
+                android:paddingEnd="@dimen/paddingSmall">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group__4_"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    style="@style/CardLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:text="@string/relaxation"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    style="@style/HomeCardDescStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:layout_marginTop="@dimen/paddingSmall"
+                    android:text="@string/music"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    style="@style/HomeCardDurationStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/paddingSmall"
+                    android:layout_marginEnd="@dimen/paddingSmall"
+                    android:text="@string/_3_10_min"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/button4"
+                    app:layout_constraintEnd_toStartOf="@+id/button4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/button4" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/HomeCardButtonStyle"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/start"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeDescription" />
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding24"
+            android:scaleType="fitXY"
+            android:src="@drawable/daily_thought_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/PrimaryTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/paddingLarge"
+            android:layout_marginTop="@dimen/padding24"
+            android:text="@string/daily_thought_label"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/DailyDescFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/paddingLarge"
+            android:layout_marginTop="@dimen/paddingSmall"
+            android:text="@string/home_card_desc"
+            android:textColor="@color/light_gray_stroke"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/playMusicButton"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:layout_marginEnd="@dimen/paddingLarge"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            app:srcCompat="@drawable/play_music_icon"
+            style="@style/PlayMusicButtonStyle" />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/PrimaryTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/paddingLarge"
+            android:text="@string/recommended_for_you"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/padding24"
+            android:layout_marginTop="@dimen/padding24"
+            android:layout_marginEnd="@dimen/padding24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            tools:listitem="@layout/home_item" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
