@@ -25,7 +25,7 @@ class ChooseTopicFragment : Fragment(R.layout.choose_topic_fragment) {
 
     private lateinit var binding: ChooseTopicFragmentBinding
 
-    private var viewAdapter: TopicAdapter = TopicAdapter {
+    private val viewAdapter: TopicAdapter = TopicAdapter {
         parentFragmentManager.clearAllBackStack()
         parentFragmentManager.beginTransaction()
             .replace(R.id.fragment_container_view, TimePickerFragment())

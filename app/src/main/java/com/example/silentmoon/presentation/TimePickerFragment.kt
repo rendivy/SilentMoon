@@ -100,23 +100,6 @@ class CustomTimePicker(context: Context, attrs: AttributeSet) : LinearLayout(con
         addView(minutePicker)
         addView(amPmPicker)
     }
-
-
-    private fun setNumberPickerTextSize(numberPicker: NumberPicker, size: Float) {
-        val count = numberPicker.childCount
-        for (i in 0 until count) {
-            val child = numberPicker.getChildAt(i)
-            if (child is EditText) {
-                try {
-                    child.textSize = size
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
-            }
-        }
-    }
-
-
 }
 
 

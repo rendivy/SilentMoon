@@ -17,7 +17,7 @@ import com.example.silentmoon.presentation.screens.choosetopic.entity.TopicItem
 
 class TopicAdapter(private inline val onItemClick: () -> Unit) :
     ListAdapter<TopicItem, TopicAdapter.TopicViewHolder>(DiffUtilTopicCallback()) {
-
+    //посмотреть обычный adapter и listAdapter
 
     private companion object {
         const val MAXIMUM_CARD_HEIGHT = 220F
@@ -52,6 +52,7 @@ class TopicAdapter(private inline val onItemClick: () -> Unit) :
         val item = getItem(position)
         with(holder.binding) {
             root.setOnClickListener { onItemClick() }
+            //setOnClickListener по другому задаются в rcView
             setImageResource(imageView3, item.imageViewId)
             setTextViewAttribute(root.context, textView6, item.label, item.textColor)
             val drawable =

@@ -9,7 +9,6 @@ import com.example.silentmoon.databinding.HomeFragmentBinding
 import com.example.silentmoon.presentation.screens.coursedetails.CourseDetailsFragment
 import com.example.silentmoon.presentation.screens.home.adapter.HomeAdapter
 import com.example.silentmoon.presentation.screens.home.service.HomeService
-import com.example.silentmoon.presentation.screens.meditation.MeditationFragment
 
 
 class HomeFragment : Fragment(R.layout.home_fragment) {
@@ -44,7 +43,7 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
             parentFragmentManager.beginTransaction()
                 .replace(
                     R.id.fragment_container_view,
-                    MeditationFragment()
+                    CourseDetailsFragment()
                 )
                 .addToBackStack(null).commit()
         }
